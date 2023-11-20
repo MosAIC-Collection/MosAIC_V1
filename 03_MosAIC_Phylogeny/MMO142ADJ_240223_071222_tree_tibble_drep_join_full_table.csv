@@ -1,0 +1,283 @@
+"label","domain","parent","class","order","family","genus","species","fastani_ani","completeness","contamination","size","cluster_members","completeness_metric","contamination_metric","source","mosquito_species","lab_field"
+"1","MMO-142_contigs_16s","Bacteria",143,"Bacteroidia","Sphingobacteriales","Sphingobacteriaceae","Sphingobacterium","Sphingobacterium siyangense","95.64",99.84,2.86,6305097,2,"near","low","mosquito","Aedes aegypti","lab"
+"2","MMO-68_contigs_16s","Bacteria",143,"Bacteroidia","Sphingobacteriales","Sphingobacteriaceae","Sphingobacterium","Sphingobacterium multivorum","97.19",100,1.19,5620411,5,"perfect","low","larval water","Aedes aegypti","lab"
+"3","USMM049_contigs_16s","Bacteria",146,"Bacteroidia","Flavobacteriales","Weeksellaceae","Elizabethkingia","Elizabethkingia meningoseptica","98.5",100,0,3895373,7,"perfect","none","mosquito","Anopheles gambiae",NA
+"4","USMM094_contigs_16s","Bacteria",146,"Bacteroidia","Flavobacteriales","Weeksellaceae","Elizabethkingia","Elizabethkingia anophelis","98.29",100,2.15,4170254,7,"perfect","low",NA,NA,NA
+"5","USHLN009_contigs_16s","Bacteria",148,"Bacteroidia","Flavobacteriales","Weeksellaceae","Chryseobacterium","Chryseobacterium contaminans","96.93",100,0.49,4706418,1,"perfect","low","mosquito","Aedes aegypti","field"
+"6","MMO-17_contigs_16s","Bacteria",149,"Bacteroidia","Flavobacteriales","Weeksellaceae","Chryseobacterium","Chryseobacterium bernardetii_A","98.56",100,0.25,4878630,1,"perfect","low","mosquito","Toxorhynchites amboinensis","lab"
+"7","USHLN267_contigs_16s","Bacteria",149,"Bacteroidia","Flavobacteriales","Weeksellaceae","Chryseobacterium","Chryseobacterium indologenes_F","99.11",100,0.25,5423884,2,"perfect","low","mosquito","Anopheles punctipennis",NA
+"8","MMO-72_contigs_16s","Bacteria",150,"Bacteroidia","Flavobacteriales","Weeksellaceae","Chryseobacterium","Chryseobacterium sp013153155","96.38",100,0,4543384,4,"perfect","none","larval water","Aedes aegypti","lab"
+"9","USHLN227_contigs_16s","Bacteria",150,"Bacteroidia","Flavobacteriales","Weeksellaceae","Chryseobacterium","Chryseobacterium mucoviscidosis","96.4",100,0.49,4411847,1,"perfect","low","mosquito",NA,"lab"
+"10","USHLN139_contigs_16s","Bacteria",154,"Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Roseomonas","","N/A",99.5,0.5,5855409,1,"near","low","mosquito",NA,"lab"
+"11","HN128_contigs_16s","Bacteria",155,"Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Asaia","Asaia sp003994335","99.99",99.5,0,3715003,2,"near","none","mosquito","Aedes aegypti","lab"
+"12","HN010_contigs_16s","Bacteria",156,"Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Asaia","","N/A",100,0,3453119,1,"perfect","none","mosquito","Aedes aegypti","lab"
+"13","HN182_contigs_16s","Bacteria",156,"Alphaproteobacteria","Acetobacterales","Acetobacteraceae","Asaia","Asaia bogorensis","96.47",99.75,0.25,3465209,5,"near","low","mosquito","Aedes aegypti","lab"
+"14","MMO-176_contigs_16s","Bacteria",161,"Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingomonas","Sphingomonas sp003355005","99.99",99.66,0.85,3648441,1,"near","low","mosquito","Toxorhynchites amboinensis","lab"
+"15","VD7_contigs_16s","Bacteria",161,"Alphaproteobacteria","Sphingomonadales","Sphingomonadaceae","Sphingomonas","Sphingomonas sanguinis","96.93",99.59,0.48,4122842,1,"near","low","mosquito","Aedes aegypti","Lab"
+"16","USHLN278_contigs_16s","Bacteria",160,"Alphaproteobacteria","Rhizobiales","Rhizobiaceae","Aureimonas","Aureimonas altamirensis","97.37",100,0.48,4170548,2,"perfect","low","mosquito","Aedes albopictus",NA
+"17","MMO-174_contigs_16s","Bacteria",159,"Alphaproteobacteria","Rhizobiales","Kaistiaceae","Kaistia","Kaistia sp017305815","99.22",100,0.5,5626252,1,"perfect","low","mosquito","Toxorhynchites amboinensis","lab"
+"18","MMO-172_contigs_16s","Bacteria",162,"Alphaproteobacteria","Rhizobiales","Beijerinckiaceae","Bosea","","N/A",99.37,0.94,5389869,1,"near","low","mosquito","Toxorhynchites amboinensis","lab"
+"19","MMO-173_contigs_16s","Bacteria",162,"Alphaproteobacteria","Rhizobiales","Beijerinckiaceae","Methylobacterium","Methylobacterium organophilum","98.9",100,0.31,7341075,2,"perfect","low","mosquito","Toxorhynchites amboinensis","lab"
+"20","USMM102_contigs_16s","Bacteria",163,"Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Brevundimonas","Brevundimonas aurantiaca","97.19",100,0.49,3282457,4,"perfect","low",NA,NA,NA
+"21","USMM111_contigs_16s","Bacteria",163,"Alphaproteobacteria","Caulobacterales","Caulobacteraceae","Brevundimonas","Brevundimonas nasdae_A","95.95",99.68,0.32,3172193,1,"near","low",NA,NA,NA
+"22","MMO-124_contigs_16s","Bacteria",166,"Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Achromobacter","Achromobacter ruhlandii","99.04",99.53,0,6267029,5,"near","none","mosquito","Aedes aegypti","lab"
+"23","MMO-42_contigs_16s","Bacteria",167,"Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Comamonas","Comamonas acidovorans","95.77",99.85,0.62,6554258,2,"near","low","larval water","Culex pipiens","lab"
+"24","VD34_contigs_16s","Bacteria",167,"Gammaproteobacteria","Burkholderiales","Burkholderiaceae","Burkholderia","Burkholderia gladioli","98.74",100,2.06,8375680,1,"perfect","low","mosquito","Aedes aegypti","Lab"
+"25","HN121_contigs_16s","Bacteria",171,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter soli","98.41",99.69,0.82,3217837,4,"near","low",NA,"Aedes aegypti",NA
+"26","MMO-143_contigs_16s","Bacteria",173,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter nosocomialis","98.08",100,0,4030323,4,"perfect","none","mosquito","Aedes aegypti","lab"
+"27","HN059_contigs_16s","Bacteria",174,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter pittii_H","96.7",100,0.5,3907018,3,"perfect","low","water",NA,"field"
+"28","MMO-163_contigs_16s","Bacteria",174,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter pittii","96.97",100,0.41,4041553,7,"perfect","low","mosquito","Aedes aegypti","lab"
+"29","AA010_contigs_16s","Bacteria",172,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter oleivorans","96.84",100,0.41,4025199,1,"perfect","low","water",NA,"field"
+"30","AS116_contigs_16s","Bacteria",179,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter junii","97.39",100,0,3323739,1,"perfect","none","water",NA,"field"
+"31","HN126_contigs_16s","Bacteria",179,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter modestus","96.95",99.96,0.55,3849786,6,"near","low",NA,"Aedes atropalpus",NA
+"32","HN105_contigs_16s","Bacteria",178,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter bereziniae","97.78",99.93,2.03,4631744,1,"near","low",NA,NA,NA
+"33","AS167_contigs_16s","Bacteria",177,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","","N/A",99.93,1.23,4370714,1,"near","low","non-mosquito diptera",NA,"lab"
+"34","USHLN143_contigs_16s","Bacteria",181,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter fasciculus","98.15",99.93,0.13,3557971,1,"near","low","mosquito","Aedes albopictus","field"
+"35","AS096_contigs_16s","Bacteria",181,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter beijerinckii","96.72",99.96,0,3508081,1,"near","none","water",NA,"field"
+"36","HN020_contigs_16s","Bacteria",180,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter johnsonii","95.44",100,0.34,3589279,1,"perfect","low","water",NA,"field"
+"37","AS013_contigs_16s","Bacteria",175,"Gammaproteobacteria","Pseudomonadales","Moraxellaceae","Acinetobacter","Acinetobacter tandoii","96.83",99.73,0.68,3579498,1,"near","low","water",NA,"field"
+"38","AS234_contigs_16s","Bacteria",187,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Proteus","Proteus cibarius","99.53",100,0,3974261,1,"perfect","none","stable fly",NA,"field"
+"39","USHLN263_contigs_16s","Bacteria",187,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Providencia","Providencia rettgeri","96.02",100,1.08,4811257,2,"perfect","low","mosquito","Culex pipiens",NA
+"40","HN039_contigs_16s","Bacteria",186,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Serratia","Serratia marcescens","98.56",99.81,0,4980970,14,"near","none","water",NA,"field"
+"41","AS231_contigs_16s","Bacteria",197,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Salmonella","Salmonella enterica","98.45",99.9,0.07,4685577,1,"near","low","stable fly",NA,"field"
+"42","AS235_contigs_16s","Bacteria",198,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Escherichia","Escherichia coli","96.7",99.97,0.33,4989989,1,"near","low","stable fly",NA,"field"
+"43","VD11_contigs_16s","Bacteria",198,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Atlantibacter","Atlantibacter hermannii","98.71",98.4,2.4,4582444,1,"near","low","mosquito","Aedes aegypti","Lab"
+"44","USHLN06_contigs_16s","Bacteria",199,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella","Klebsiella variicola","99.26",100,0.39,5454526,1,"perfect","low",NA,NA,NA
+"45","VD5_contigs_16s","Bacteria",199,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacter","Enterobacter cloacae","98.55",100,0.06,5113152,2,"perfect","low","mosquito","Aedes aegypti","Lab"
+"46","USMM130_contigs_16s","Bacteria",195,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Erwinia","Erwinia aphidicola","98.83",100,0.2,4838753,5,"perfect","low",NA,"Culex pippiens",NA
+"47","USHLN162_contigs_16s","Bacteria",208,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea dispersa","97.95",99.98,0.16,4923192,10,"near","low","mosquito","Aedes albopictus","field"
+"48","AS031_contigs_16s","Bacteria",209,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea eucrina","98.85",99.28,0.33,3968840,1,"near","low","water",NA,"field"
+"49","AS126_contigs_16s","Bacteria",209,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea eucrina_A","99.26",99.28,0.33,3844711,1,"near","low","water",NA,"field"
+"50","USHLN165_contigs_16s","Bacteria",212,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea vagans","95.86",100,0.7,5034833,1,"perfect","low","mosquito","Aedes albopictus","field"
+"51","AS142_contigs_16s","Bacteria",212,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","","N/A",100,0.3,4699479,1,"perfect","low","water",NA,"field"
+"52","USMM080_contigs_16s","Bacteria",211,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea anthophila","98.55",100,0.08,4566460,4,"perfect","low",NA,NA,NA
+"53","AS129_contigs_16s","Bacteria",214,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea agglomerans","98.46",100,0.19,4887144,5,"perfect","low","water",NA,"field"
+"54","USHLN298_contigs_16s","Bacteria",214,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea sp002434205","99.31",100,0.41,4776404,1,"perfect","low","mosquito","Anopheles quadrimaculatus",NA
+"55","USHLN198_contigs_16s","Bacteria",213,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea ananatis","99.0",100,0.08,4741463,5,"perfect","low","mosquito","Aedes albopictus","field"
+"56","USHLN256_contigs_16s","Bacteria",206,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea sp001187905","98.59",100,0.19,5280296,1,"perfect","low","mosquito","Culex erraticus",NA
+"57","USHLN32_contigs_16s","Bacteria",205,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea endophytica","98.41",99.84,0.2,5262404,1,"near","low",NA,NA,NA
+"58","AS209_contigs_16s","Bacteria",217,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella","Klebsiella ornithinolytica","99.5",99.99,1.05,5219086,1,"near","low","cow manure",NA,"field"
+"59","HN028_contigs_16s","Bacteria",217,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Lelliottia","Lelliottia amnigena","98.74",99.67,0.08,4577781,1,"near","low","water",NA,"field"
+"60","AS183_contigs_16s","Bacteria",216,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","UBA7405","UBA7405 sp000755535","98.61",99.67,0.2,4658682,1,"near","low","non-mosquito diptera",NA,"lab"
+"61","AS230_contigs_16s","Bacteria",215,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella","Klebsiella aerogenes","96.18",100,0.39,5216318,1,"perfect","low","stable fly",NA,"field"
+"62","HN162_contigs_16s","Bacteria",218,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella","Klebsiella oxytoca","99.36",100,0.07,5986419,1,"perfect","low","larval water","Aedes triseriatus",NA
+"63","USHLN157_contigs_16s","Bacteria",218,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Klebsiella","Klebsiella michiganensis","99.83",100,0.72,6104761,2,"perfect","low","mosquito",NA,"lab"
+"64","AS216_contigs_16s","Bacteria",219,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pseudescherichia","Pseudescherichia sp002298805","98.75",98.32,0.57,4305480,1,"near","low","stable fly",NA,"field"
+"65","USHLN178_contigs_16s","Bacteria",219,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pseudescherichia","Pseudescherichia vulneris","97.94",98.17,0.92,4267653,3,"near","low","mosquito","Aedes albopictus","field"
+"66","USMM078_contigs_16s","Bacteria",201,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea cancerogena_A","96.95",100,0.66,5645242,2,"perfect","low",NA,NA,NA
+"67","AS212_contigs_16s","Bacteria",200,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacter","Enterobacter hormaechei_A","95.95",99.92,0.07,4548882,7,"near","low","stable fly",NA,"field"
+"68","USHLN167_contigs_16s","Bacteria",193,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacter","Enterobacter mori","96.24",99.97,0.04,4759394,1,"near","low","mosquito","Aedes albopictus","field"
+"69","HN125_contigs_16s","Bacteria",192,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacter","Enterobacter asburiae_B","98.42",99.97,0.33,4697227,27,"near","low",NA,"Aedes atropalpus",NA
+"70","AS124_contigs_16s","Bacteria",220,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Enterobacter","Enterobacter roggenkampii","98.31",99.07,0.04,4737567,18,"near","low","water",NA,"field"
+"71","AS011_contigs_16s","Bacteria",220,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Leclercia","","N/A",99.69,0.44,4737009,1,"near","low","water",NA,"field"
+"72","HN037_contigs_16s","Bacteria",190,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Leclercia","Leclercia adecarboxylata","98.44",99.6,0.46,4741188,5,"near","low","water",NA,"field"
+"73","USHLN005_contigs_16s","Bacteria",189,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Cedecea","Cedecea sp000277545","99.98",99.99,0.36,4763699,15,"near","low","mosquito","Aedes aegypti","lab"
+"74","M50_contigs_16s","Bacteria",188,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Leclercia","Leclercia sp002902985","98.48",99.53,0.33,4781054,1,"near","low","mosquito","Aedes aegypti","Lab"
+"75","HN019_contigs_16s","Bacteria",184,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Pantoea","Pantoea eucalypti","99.06",100,0.49,4739213,1,"perfect","low","water",NA,"field"
+"76","HN079_contigs_16s","Bacteria",222,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Chania","Chania oryzae","96.63",99.98,0.32,5767174,4,"near","low","mosquito","Culex pipiens","lab"
+"77","HN166_contigs_16s","Bacteria",223,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Serratia","Serratia liquefaciens","98.77",100,0.45,5675602,1,"perfect","low","mosquito","Aedes triseriatus",NA
+"78","USHLN010_contigs_16s","Bacteria",223,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Rouxiella","Rouxiella badensis","99.65",99.67,0.55,4926074,1,"near","low","mosquito","Aedes aegypti","lab"
+"79","HN151_contigs_16s","Bacteria",221,"Gammaproteobacteria","Enterobacterales","Enterobacteriaceae","Serratia_A","Serratia_A fonticola","95.53",99.94,0.06,6108733,3,"near","low","mosquito","Aedes triseriatus",NA
+"80","MMO-36_contigs_16s","Bacteria",182,"Gammaproteobacteria","Enterobacterales","Aeromonadaceae","Aeromonas","Aeromonas hydrophila","96.93",99.97,0,4900744,6,"near","none","larval water","Culex pipiens","lab"
+"81","USMM045_contigs_16s","Bacteria",225,"Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas_E","Pseudomonas_E paracarnis","99.1",99.8,1.18,6338975,4,"near","low",NA,NA,NA
+"82","VD15_contigs_16s","Bacteria",225,"Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas_E","Pseudomonas_E juntendi","97.87",99.13,2,5559710,6,"near","low","mosquito","Aedes aegypti","Lab"
+"83","USHLN015_contigs_16s","Bacteria",224,"Gammaproteobacteria","Pseudomonadales","Pseudomonadaceae","Pseudomonas_F","Pseudomonas_F sp003234055","97.65",99.68,0.87,6627869,1,"near","low","mosquito","Aedes aegypti","field"
+"84","MMO-164_contigs_16s","Bacteria",227,"Gammaproteobacteria","Xanthomonadales","Xanthomonadaceae","Stenotrophomonas","Stenotrophomonas maltophilia","97.64",100,0.61,4889208,5,"perfect","low","mosquito","Aedes aegypti","lab"
+"85","USMM131_contigs_16s","Bacteria",227,"Gammaproteobacteria","Xanthomonadales","Xanthomonadaceae","Stenotrophomonas","Stenotrophomonas maltophilia_A","97.47",100,0.12,4573397,2,"perfect","low",NA,"Aedes albopictus",NA
+"86","USHLN014_contigs_16s","Bacteria",228,"Gammaproteobacteria","Xanthomonadales","Xanthomonadaceae","Pseudoxanthomonas_A","Pseudoxanthomonas_A sp004284195","97.5",99.66,1.11,4606712,1,"near","low","mosquito","Aedes aegypti","lab"
+"87","USHLN149_contigs_16s","Bacteria",228,"Gammaproteobacteria","Xanthomonadales","Xanthomonadaceae","JAATFS01","","N/A",100,1.49,4319766,1,"perfect","low","mosquito","Aedes albopictus","field"
+"88","USMM236_contigs_16s","Bacteria",231,"Actinomycetia","Mycobacteriales","Mycobacteriaceae","Tsukamurella","","N/A",99.46,0.52,4981933,1,"near","low","larval water","Aedes albopictus","field"
+"89","USHLN150_contigs_16s","Bacteria",233,"Actinomycetia","Mycobacteriales","Mycobacteriaceae","Rhodococcus","Rhodococcus globerulus","98.62",99.56,0.99,7190419,1,"near","low","mosquito","Aedes albopictus","field"
+"90","USMM241_contigs_16s","Bacteria",233,"Actinomycetia","Mycobacteriales","Mycobacteriaceae","Rhodococcus","Rhodococcus qingshengii","98.48",99.94,1.23,7165772,1,"near","low","larval water","Aedes albopictus","field"
+"91","MMO-152_contigs_16s","Bacteria",234,"Actinomycetia","Mycobacteriales","Mycobacteriaceae","Gordonia","Gordonia malaquae","97.93",99.58,0.12,4612969,1,"near","low","larval water","Toxorhynchites amboinensis","lab"
+"92","MMO-8_contigs_16s","Bacteria",234,"Actinomycetia","Mycobacteriales","Mycobacteriaceae","Gordonia","Gordonia sp016919385","99.85",99.58,0.29,4252524,1,"near","low","larval water","Toxorhynchites amboinensis","lab"
+"93","USHLN155_contigs_16s","Bacteria",237,"Actinomycetia","Actinomycetales","Cellulomonadaceae","Oerskovia","Oerskovia sp005937995","96.15",100,0,4331376,1,"perfect","none","mosquito","Aedes albopictus","field"
+"94","USHLN208_contigs_16s","Bacteria",237,"Actinomycetia","Actinomycetales","Cellulomonadaceae","Cellulosimicrobium","Cellulosimicrobium cellulans_E","98.37",100,1.83,4645125,1,"perfect","low","mosquito","Aedes albopictus","field"
+"95","USHLN234_contigs_16s","Bacteria",240,"Actinomycetia","Actinomycetales","Micrococcaceae","Sinomonas","Sinomonas albida","97.84",99.08,0,3937683,1,"near","none","mosquito","Aedes albopictus","field"
+"96","MMO-141_contigs_16s","Bacteria",241,"Actinomycetia","Actinomycetales","Micrococcaceae","Micrococcus","Micrococcus luteus","97.09",98.7,0.23,2538134,10,"near","low","mosquito","Aedes aegypti","lab"
+"97","MMO-160_contigs_16s","Bacteria",241,"Actinomycetia","Actinomycetales","Micrococcaceae","Citricoccus","Citricoccus terreus","96.78",99.07,0.92,3009619,1,"near","low","mosquito","Aedes aegypti","lab"
+"98","USHLN218_contigs_16s","Bacteria",239,"Actinomycetia","Actinomycetales","Micrococcaceae","Arthrobacter_F","","N/A",99.31,2.79,4658041,1,"near","low","mosquito","Aedes albopictus","field"
+"99","USHLN217_contigs_16s","Bacteria",242,"Actinomycetia","Actinomycetales","Micrococcaceae","Kocuria","Kocuria marina","98.69",99.34,0,2880105,4,"near","none","mosquito","Aedes albopictus","field"
+"100","USHLN215_contigs_16s","Bacteria",242,"Actinomycetia","Actinomycetales","Micrococcaceae","Kocuria","Kocuria rosea","98.44",99.34,0,3935833,1,"near","none","mosquito","Aedes albopictus","field"
+"101","MMO-56_contigs_16s","Bacteria",245,"Actinomycetia","Actinomycetales","Microbacteriaceae","Microbacterium","","N/A",99.49,1.02,3720635,3,"near","low","mosquito","Aedes triseriatus","lab"
+"102","MMO-64_contigs_16s","Bacteria",245,"Actinomycetia","Actinomycetales","Microbacteriaceae","Microbacterium","Microbacterium sp003248845","97.65",99.49,0,2980263,5,"near","none","larval water","Aedes aegypti","lab"
+"103","MMO-35_contigs_16s","Bacteria",247,"Actinomycetia","Actinomycetales","Microbacteriaceae","Microbacterium","Microbacterium sp017306305","98.84",99.49,0.67,4061552,5,"near","low","larval water","Culex pipiens","lab"
+"104","USHLN186_contigs_16s","Bacteria",247,"Actinomycetia","Actinomycetales","Microbacteriaceae","Microbacterium","","N/A",99.49,0.59,2936929,1,"near","low","mosquito","Aedes albopictus","field"
+"105","USHLN272_contigs_16s","Bacteria",249,"Actinomycetia","Actinomycetales","Microbacteriaceae","Microbacterium","Microbacterium sp017405925","97.13",99.49,0,3390369,1,"near","none","mosquito","Aedes albopictus",NA
+"106","LB16_contigs_16s","Bacteria",249,"Actinomycetia","Actinomycetales","Microbacteriaceae","Microbacterium","","N/A",99.33,1.01,3809670,2,"near","low","mosquito","Aedes aegypti","Lab"
+"107","MMO-113_contigs_16s","Bacteria",248,"Actinomycetia","Actinomycetales","Microbacteriaceae","Microbacterium","Microbacterium sp001866135","99.18",98.99,0.06,3441445,1,"near","low","mosquito","Aedes aegypti","lab"
+"108","USHLN213_contigs_16s","Bacteria",250,"Actinomycetia","Actinomycetales","Microbacteriaceae","Curtobacterium","Curtobacterium sp001806325","97.97",98.99,0.76,3971861,1,"near","low",NA,NA,NA
+"109","VD1_contigs_16s","Bacteria",253,"Actinomycetia","Actinomycetales","Microbacteriaceae","Leucobacter","","N/A",100,0,2727067,5,"perfect","none","mosquito","Aedes aegypti","Lab"
+"110","USHLN154_contigs_16s","Bacteria",253,"Actinomycetia","Actinomycetales","Microbacteriaceae","Leucobacter","Leucobacter sp001373475","98.77",100,0,3024531,1,"perfect","none","mosquito","Aedes albopictus","field"
+"111","USHLN153_contigs_16s","Bacteria",252,"Actinomycetia","Actinomycetales","Microbacteriaceae","Leucobacter","","N/A",100,0.58,2650633,1,"perfect","low","mosquito","Aedes albopictus","field"
+"112","MMO-57_contigs_16s","Bacteria",251,"Actinomycetia","Actinomycetales","Microbacteriaceae","Leucobacter","Leucobacter sp000980875","99.98",99.71,1.46,3707518,5,"near","low","mosquito","Aedes triseriatus","lab"
+"113","USMM099_contigs_16s","Bacteria",256,"Bacilli","Paenibacillales","Paenibacillaceae","Paenibacillus","Paenibacillus illinoisensis","95.39",99.85,0.02,7146083,3,"near","low",NA,NA,NA
+"114","MMO-59_contigs_16s","Bacteria",257,"Bacilli","Paenibacillales","Paenibacillaceae","Paenibacillus_T","","N/A",99.73,0.69,6568089,1,"near","low",NA,NA,NA
+"115","MMO-177_contigs_16s","Bacteria",258,"Bacilli","Paenibacillales","Paenibacillaceae","Paenibacillus_C","","N/A",99.73,0.54,6688047,1,"near","low","mosquito","Toxorhynchites amboinensis","lab"
+"116","MMO-58_contigs_16s","Bacteria",258,"Bacilli","Paenibacillales","Paenibacillaceae","Paenibacillus_C","","N/A",99.73,0,7206384,1,"near","none","mosquito","Aedes triseriatus","lab"
+"117","USHLN196_contigs_16s","Bacteria",255,"Bacilli","Paenibacillales","Paenibacillaceae","Paenibacillus","","N/A",99.85,0.74,7390701,1,"near","low","mosquito",NA,"lab"
+"118","USHLN273_contigs_16s","Bacteria",262,"Bacilli","Bacillales_A","Planococcaceae","Kurthia","Kurthia gibsonii","97.2",99.34,0.22,2987427,1,"near","low","mosquito","Anopheles quadrimaculatus",NA
+"119","USHLN028_contigs_16s","Bacteria",262,"Bacilli","Bacillales_A","Planococcaceae","Lysinibacillus","Lysinibacillus fusiformis","97.2",99.34,0.33,4568236,2,"near","low","mosquito","Aedes aegypti",NA
+"120","AS224_contigs_16s","Bacteria",267,"Bacilli","Staphylococcales","Staphylococcaceae","Mammaliicoccus","Mammaliicoccus sciuri","97.52",99.45,2.39,2709902,1,"near","low","stable fly",NA,"field"
+"121","MMO-31_contigs_16s","Bacteria",270,"Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus","Staphylococcus epidermidis","99.43",99.81,0,2445171,4,"near","none","mosquito","Culex pipiens","lab"
+"122","MMO-81_contigs_16s","Bacteria",270,"Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus","Staphylococcus capitis","99.61",99.81,0.11,2462728,1,"near","low","mosquito","Aedes aegypti","lab"
+"123","CR11_contigs_16s","Bacteria",269,"Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus","Staphylococcus hominis","99.08",99.38,0.65,2219645,4,"near","low","mosquito","Aedes aegypti","Lab"
+"124","USHLN169_contigs_16s","Bacteria",271,"Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus","Staphylococcus nepalensis","99.54",99.45,1.1,2798989,3,"near","low","mosquito","Aedes albopictus","field"
+"125","AS218_contigs_16s","Bacteria",273,"Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus","Staphylococcus xylosus","97.81",99.44,1.39,2809345,1,"near","low","stable fly",NA,"field"
+"126","MMO-140_contigs_16s","Bacteria",273,"Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus","Staphylococcus saprophyticus","99.59",99.44,0,2655188,1,"near","none","mosquito","Culex pipiens","lab"
+"127","MMO-47_contigs_16s","Bacteria",272,"Bacilli","Staphylococcales","Staphylococcaceae","Staphylococcus","Staphylococcus pseudoxylosus","97.15",99.44,0.83,2855424,1,"near","low","larval water","Aedes triseriatus","lab"
+"128","USHLN023_contigs_16s","Bacteria",266,"Bacilli","Bacillales","Bacillaceae_H","Bacillus_AG","Bacillus_AG koreensis","95.77",99.43,0.57,4732094,1,"near","low","mosquito","Aedes aegypti",NA
+"129","USHLN181_contigs_16s","Bacteria",278,"Bacilli","Bacillales","Bacillaceae_G","Bacillus_A","Bacillus_A cereus","98.8",99.18,0.01,5308050,14,"near","low","mosquito","Aedes albopictus","field"
+"130","USMM093_contigs_16s","Bacteria",278,"Bacilli","Bacillales","Bacillaceae_G","Bacillus_A","Bacillus_A toyonensis","99.39",99.34,0.38,5765440,2,"near","low",NA,NA,NA
+"131","USMM074_contigs_16s","Bacteria",277,"Bacilli","Bacillales","Bacillaceae_G","Bacillus_A","Bacillus_A cereus_AG","99.91",99.01,0.5,5874048,2,"near","low",NA,NA,NA
+"132","MMO-108_contigs_16s","Bacteria",276,"Bacilli","Bacillales_B","DSM-1321","Peribacillus","Peribacillus frigoritolerans","96.88",98.91,2.5,6226159,1,"near","low","mosquito","Aedes aegypti","lab"
+"133","USHLN018_contigs_16s","Bacteria",275,"Bacilli","Bacillales","Bacillaceae_H","Priestia","Priestia megaterium","96.76",99.43,0.32,5024320,3,"near","low","mosquito","Aedes aegypti","field"
+"134","USMM117_contigs_16s","Bacteria",274,"Bacilli","Bacillales_B","DSM-18226","Bacillus_AB","Bacillus_AB infantis","98.25",99.45,1.26,4994367,2,"near","low",NA,NA,NA
+"135","S315_contigs_16s","Bacteria",279,"Bacilli","Bacillales_D","Amphibacillaceae","Oceanobacillus","Oceanobacillus massiliensis","98.66",100,3.84,3603241,1,"perfect","low","mosquito","Aedes aegypti","Lab"
+"136","USHLN197_contigs_16s","Bacteria",280,"Bacilli","Bacillales","Bacillaceae","Bacillus","Bacillus altitudinis","98.33",99.59,0,3714628,2,"near","none","mosquito","Aedes albopictus","field"
+"137","MMO-114_contigs_16s","Bacteria",281,"Bacilli","Bacillales","Bacillaceae","Bacillus","Bacillus licheniformis","99.52",98.96,0,4433139,1,"near","none","mosquito","Aedes aegypti","lab"
+"138","USHLN188_contigs_16s","Bacteria",281,"Bacilli","Bacillales","Bacillaceae","Bacillus","Bacillus subtilis","98.31",99.81,1.36,4182381,2,"near","low","mosquito","Aedes albopictus","lab"
+"139","MMO-19_contigs_16s","Bacteria",282,"Bacilli","Lactobacillales","Enterococcaceae","Enterococcus_D","Enterococcus_D casseliflavus","98.25",99.25,3.6,3766950,1,"near","low","larval water","Toxorhynchites amboinensis","lab"
+"140","USMM125_contigs_16s","Bacteria",282,"Bacilli","Lactobacillales","Enterococcaceae","Enterococcus","Enterococcus faecalis","98.74",99.63,0.07,2756798,1,"near","low",NA,"Anopheles quadrimaculatus",NA
+"141","USHLN248_contigs_16s","Bacteria",260,"Bacilli","Bacillales_A","Planococcaceae","Sporosarcina","","N/A",98.01,1.43,3693406,1,"near","low","mosquito","Aedes albopictus","field"
+"142","USHLN293_contigs_16s","Bacteria",259,"Bacilli","Exiguobacterales","Exiguobacteraceae","Exiguobacterium_A","Exiguobacterium_A acetylicum","98.59",99.34,0,3221837,3,"near","none","mosquito","Anopheles quadrimaculatus",NA
+"143","",NA,143,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"144","100",NA,143,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"145","100",NA,144,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"146","70",NA,145,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"147","100",NA,145,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"148","100",NA,147,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"149","95",NA,148,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"150","100",NA,147,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"151","100",NA,144,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"152","97",NA,151,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"153","100",NA,152,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"154","100",NA,153,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"155","100",NA,154,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"156","67",NA,155,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"157","95",NA,153,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"158","83",NA,157,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"159","75",NA,158,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"160","77",NA,159,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"161","100",NA,160,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"162","100",NA,158,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"163","100",NA,157,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"164","100",NA,152,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"165","97",NA,164,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"166","100",NA,165,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"167","96",NA,166,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"168","100",NA,165,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"169","88",NA,168,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"170","100",NA,169,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"171","74",NA,170,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"172","96",NA,171,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"173","100",NA,172,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"174","62",NA,173,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"175","51",NA,170,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"176","30",NA,175,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"177","70",NA,176,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"178","61",NA,177,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"179","93",NA,178,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"180","28",NA,176,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"181","26",NA,180,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"182","100",NA,169,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"183","95",NA,182,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"184","60",NA,183,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"185","56",NA,184,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"186","77",NA,185,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"187","98",NA,186,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"188","63",NA,185,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"189","44",NA,188,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"190","51",NA,189,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"191","24",NA,190,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"192","23",NA,191,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"193","28",NA,192,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"194","55",NA,193,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"195","75",NA,194,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"196","87",NA,195,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"197","87",NA,196,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"198","95",NA,197,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"199","100",NA,196,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"200","54",NA,194,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"201","57",NA,200,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"202","54",NA,201,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"203","49",NA,202,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"204","36",NA,203,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"205","58",NA,204,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"206","60",NA,205,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"207","76",NA,206,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"208","97",NA,207,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"209","100",NA,208,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"210","68",NA,207,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"211","41",NA,210,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"212","73",NA,211,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"213","67",NA,210,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"214","78",NA,213,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"215","66",NA,204,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"216","41",NA,215,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"217","67",NA,216,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"218","97",NA,203,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"219","98",NA,202,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"220","96",NA,191,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"221","93",NA,183,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"222","74",NA,221,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"223","97",NA,222,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"224","100",NA,168,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"225","99",NA,224,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"226","100",NA,164,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"227","100",NA,226,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"228","100",NA,226,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"229","99",NA,151,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"230","100",NA,229,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"231","100",NA,230,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"232","94",NA,231,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"233","100",NA,232,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"234","100",NA,232,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"235","99",NA,230,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"236","96",NA,235,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"237","100",NA,236,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"238","100",NA,236,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"239","99",NA,238,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"240","59",NA,239,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"241","100",NA,240,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"242","100",NA,238,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"243","100",NA,235,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"244","100",NA,243,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"245","100",NA,244,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"246","97",NA,244,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"247","95",NA,246,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"248","100",NA,246,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"249","100",NA,248,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"250","99",NA,243,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"251","100",NA,250,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"252","99",NA,251,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"253","99",NA,252,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"254","100",NA,229,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"255","100",NA,254,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"256","39",NA,255,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"257","45",NA,256,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"258","86",NA,257,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"259","100",NA,254,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"260","99",NA,259,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"261","76",NA,260,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"262","98",NA,261,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"263","79",NA,261,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"264","69",NA,263,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"265","43",NA,264,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"266","57",NA,265,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"267","100",NA,266,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"268","93",NA,267,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"269","94",NA,268,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"270","100",NA,269,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"271","99",NA,268,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"272","100",NA,271,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"273","100",NA,272,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"274","42",NA,265,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"275","42",NA,274,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"276","42",NA,275,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"277","100",NA,276,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"278","94",NA,277,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"279","81",NA,264,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"280","100",NA,279,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"281","80",NA,280,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"282","100",NA,263,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

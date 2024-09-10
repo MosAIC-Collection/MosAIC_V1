@@ -13,7 +13,7 @@ library(ggnewscale)
 library(janitor)
 
 # Read Tree
-Serratia_pop <- read.tree("SerratiaModel/280323_core_gene_alignment_SNP_filt.aln.contree")
+Serratia_pop <- read.tree("MosAIC_V1/06a_SerratiaPopulationStructure/280323_core_gene_alignment_SNP_filt.aln.contree")
 
 # Root Tree
 rooted_serratia_tree <- phytools::midpoint.root(Serratia_pop)
@@ -71,6 +71,34 @@ cols <- c("Serratia entomophila" = "#4e79a7",
           "Anopheles stephensi" = "#6B4850", 
           "Toxorhynchites amboinensis" = "#81B393")
 
+# MosAIC colours
+MosAIC_cols <- c("female_mosquito" = "#4e79a7",
+                 "male_mosquito" = "#f28e2b",
+                 "larval_water" = "#e15759",
+                 "mosquito" = "#C3D673",
+                 "mosquito_egg" = "#76b7b2",
+                 "stable fly" = "#394B18",
+                 "water" = "#336220",
+                 "Coon" = "#edc948", 
+                 "Hughes/Heinz" = "#297A31",
+                 "Lampe, David" = "#32915E",
+                 "Povelones, Michael" = "#1BC200",
+                 "Valiente Moro, Claire" = "#1FA918",
+                 "field" = "#344FAA",
+                 "Ankazobe, Madagascar" = "#2760AA",
+                 "E. hormaechei subsp. hoffmannii" = "#1B77A9",
+                 "E. hormaechei subsp. oharae" =  "#1191A7",
+                 "E. hormaechei subsp. steigerwaltii" = "#07A49A",
+                 "lab" = "#913431",
+                 "field" = "Black", 
+                 "lab" = "grey",
+                 "Arlington, WI" = "#90318C",
+                 "Cook Co, IL" = "#827A87",
+                 "LSTM" = "#76b7b2",
+                 "Tamatave, Madagascar" = "#B88694",
+                 "UGA" = "black",
+                 "UW Madison" = "white", 
+                 "UW Madison" = "#F781BF")
 # Initial Tree Drawing
 S1 <- ggtree(rooted_serratia_tree, layout="circular", size=0.2, right = T, ladderize = T) + 
   layout_fan(angle = 90)
@@ -78,7 +106,7 @@ S1 <- ggtree(rooted_serratia_tree, layout="circular", size=0.2, right = T, ladde
 ggsave(S1, filename = "SerratiaModel/GenusPop/130423_InitialTree.pdf", height = 40)
 
 # Read Metadata
-serratia_metadata <- read.csv("SerratiaModel/serratia_metadata.csv", header = T,
+serratia_metadata <- read.csv("MosAIC_V1/06a_SerratiaPopulationStructure/serratia_metadata.csv", header = T,
                               quote = "",
                               stringsAsFactors = F,
                               comment.char = "")
@@ -182,7 +210,7 @@ ggsave(filename = "SerratiaModel/PlotsFinal/Figure_3_Williamns_MosAIC_Population
 
 # MAKE SUBSETS
 # Read in Serratia marscecens metadata - clean + filter for isolation source 
-S_metadata <- read_csv("SerratiaModel/serratia_metadata.csv") %>%
+S_metadata <- read_csv("MosAIC_V1/06a_SerratiaPopulationStructure/serratia_metadata.csv") %>%
   clean_names() 
 
 # Substitute all "." with "_"  

@@ -56,24 +56,24 @@ JoinAndWrangleData <- function(panaroo_data, panaroo_annotations, lineage_data,
 }
 
 # Enterobacter asburiae
-Enterobacter_asburiae_gene_table <- JoinAndWrangleData("EnterobacterModel/EnterobacterAsburiae/090423_gene_presence_absence_clean.Rtab", 
-                   "EnterobacterModel/EnterobacterAsburiae/gene_presence_absence.csv", 
-                   "EnterobacterModel/EnterobacterAsburiae/090423_PopPUNK_clusters_refine_clean.tsv", 
-                   "EnterobacterModel/EnterobacterAsburiae/output_classification_table.tab", 
+Enterobacter_asburiae_gene_table <- JoinAndWrangleData("MosAIC_V1/11_LineageCoreGeneAnalysis/Enterobacter/090423_gene_presence_absence_clean.Rtab", 
+                   "MosAIC_V1/11_LineageCoreGeneAnalysis/Enterobacter/gene_presence_absence.csv", 
+                   "MosAIC_V1/11_LineageCoreGeneAnalysis/Enterobacter/090423_PopPUNK_clusters_refine_clean.tsv", 
+                   "MosAIC_V1/11_LineageCoreGeneAnalysis/Enterobacter/output_classification_table.tab", 
                    "Enterobacter_asburiae")
 
 # Serratia marscecens
-Serratia_marscecens_gene_table <- JoinAndWrangleData("SerratiaModel/Serratia_marscecens/090423_gene_presence_absence_clean.Rtab", 
-                                                     "SerratiaModel/Serratia_marscecens/gene_presence_absence.csv", 
-                                                     "SerratiaModel/Serratia_marscecens/090423_PopPUNK_clusters_refine_clean.tsv", 
-                                                     "SerratiaModel/Serratia_marscecens/104023_output_classification_table.tsv", 
+Serratia_marscecens_gene_table <- JoinAndWrangleData("MosAIC_V1/11_LineageCoreGeneAnalysis/Serratia/090423_gene_presence_absence_clean.Rtab", 
+                                                     "MosAIC_V1/11_LineageCoreGeneAnalysis/Serratia/gene_presence_absence.csv", 
+                                                     "MosAIC_V1/11_LineageCoreGeneAnalysis/Serratia/090423_PopPUNK_clusters_refine_clean.tsv", 
+                                                     "MosAIC_V1/11_LineageCoreGeneAnalysis/Serratia/104023_output_classification_table.tsv", 
                                                      "Serratia_marscecens")
 
 # Elizabethkingia anophelis
-Elizabethkingia_anphelis_gene_table <- JoinAndWrangleData("ElizabethkingiaModel/260423_gene_presence_absence_clean.Rtab", 
-                                                          "ElizabethkingiaModel/260423_gene_presence_absence.csv", 
-                                                          "ElizabethkingiaModel/260423_PopPUNK_clusters_refine_clean.tsv", 
-                                                          "ElizabethkingiaModel/260423_Eliz_output_classification_table.tsv", 
+Elizabethkingia_anphelis_gene_table <- JoinAndWrangleData("MosAIC_V1/11_LineageCoreGeneAnalysis/Elizabethkingia/260423_gene_presence_absence_clean.Rtab", 
+                                                          "MosAIC_V1/11_LineageCoreGeneAnalysis/Elizabethkingia/260423_gene_presence_absence.csv", 
+                                                          "MosAIC_V1/11_LineageCoreGeneAnalysis/Elizabethkingia/260423_PopPUNK_clusters_refine_clean.tsv", 
+                                                          "MosAIC_V1/11_LineageCoreGeneAnalysis/Elizabethkingia/260423_Eliz_output_classification_table.tsv", 
                                                           "Elizabethkingia_anophelis")
 
 
@@ -150,8 +150,8 @@ full_table %>%
       details == "Core: 8 Inter:  Rare:" & dataset == "Enterobacter_asburiae" | 
       details == "Core: 12 Inter:  Rare:" & dataset == "Serratia_marscecens" | 
       details == "Core: 24 Inter:  Rare:" & dataset == "Serratia_marscecens" |
-      details == "Core: 7 Inter:  Rare:" & dataset == "Elizabethkingia_model" |
-      details == "Core: 10 Inter:  Rare:" & dataset == "Elizabethkingia_model") %>%
+      details == "Core: 7 Inter:  Rare:" & dataset == "Elizabethkingia_anophelis" |
+      details == "Core: 10 Inter:  Rare:" & dataset == "Elizabethkingia_anophelis") %>%
   filter(Pres_Abs != 0) %>%
   mutate(Annotation = str_remove(Annotation, "domain-containing protein"), 
          Annotation = str_remove(Annotation, "protein")) %>%
@@ -177,7 +177,7 @@ GetDataframe <- function(table, taget){
         details == "Core: 8 Inter:  Rare:" & dataset == "Enterobacter_asburiae" | 
         details == "Core: 12 Inter:  Rare:" & dataset == "Serratia_marscecens" | 
         details == "Core: 24 Inter:  Rare:" & dataset == "Serratia_marscecens" |
-        details == "Core: 7 Inter:  Rare:" & dataset == "Elizabethkingia_model") %>%
+        details == "Core: 7 Inter:  Rare:" & dataset == "Elizabethkingia_anophelis") %>%
     filter(dataset == taget) %>%
     filter(Pres_Abs != 0) %>%
     filter(Annotation != "hypothetical protein") %>%
@@ -198,7 +198,7 @@ GetDataframe <- function(table, taget){
 
 Data_EA <- GetDataframe(full_table, "Enterobacter_asburiae")
 Data_SM <- GetDataframe(full_table, "Serratia_marscecens")
-Data_Eliz <- GetDataframe(full_table, "Elizabethkingia_model")
+Data_Eliz <- GetDataframe(full_table, "Elizabethkingia_anophelis")
 
 # Most common annotation? 
 Data_Eliz %>%
@@ -262,7 +262,7 @@ table_with_overlap <- full_table %>%
       details == "Core: 8 Inter:  Rare:" & dataset == "Enterobacter_asburiae" | 
       details == "Core: 12 Inter:  Rare:" & dataset == "Serratia_marscecens" | 
       details == "Core: 24 Inter:  Rare:" & dataset == "Serratia_marscecens" |
-      details == "Core: 7 Inter:  Rare:" & dataset == "Elizabethkingia_model") %>%
+      details == "Core: 7 Inter:  Rare:" & dataset == "Elizabethkingia_anophelis") %>%
   filter(Pres_Abs != 0) %>%
   mutate(Annotation = str_remove(Annotation, "-containing protein")) %>%
   #Annotation = str_remove(Annotation, "protein")) %>%

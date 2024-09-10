@@ -4,7 +4,7 @@ library(ggsankey)
 library(janitor)
 
 ### Make Sankey Plots
-MosAIC_tbl <- read_tsv("August_MosAIC_LSTM_UW_Metadata.txt") %>%
+MosAIC_tbl <- read_tsv("MosAIC_V1/04_Sankey_Diagram/S1_Table_MosAIC_Metadata_Final2.txt") %>%
   clean_names()
 
 sources <- c("unknown", "water", "cow manure", "non-mosquito Diptera", "mosquito", "larval water")
@@ -90,16 +90,16 @@ MosAIC_Sankey_1 <- MosAIC_tbl_clean %>%
   select(Source, `Lab / Field Derived`, `Mosquito species`, `Life stage`, `Mosquito Tissue`, Sex, `Feeding status`) %>%
   arrange(Source, ) %>%
   make_long(Source, `Lab / Field Derived`, `Mosquito species`, `Life stage`, `Mosquito Tissue`, Sex, `Feeding status`) 
-  
+
 
 # Function to make Sankey, use on different DFs
 MakeItSankey <- function(table){
   pl <- ggplot(table, aes(x = x,                        
-                                     next_x = next_x,                                     
-                                     node = node,
-                                     next_node = next_node,        
-                                     fill = factor(node),
-                                     label = node))             
+                          next_x = next_x,                                     
+                          node = node,
+                          next_node = next_node,        
+                          fill = factor(node),
+                          label = node))             
   
   pl <- pl + geom_sankey(flow.alpha = 0.7,         
                          node.color = "black",     
@@ -125,7 +125,7 @@ MakeItSankey <- function(table){
 }
 
 MakeItSankey(MosAIC_Sankey_1)
-ggsave(file = "Figure1_Mosquito_Isolation_sources_280823.pdf", width = 14, height = 10)
+ggsave(file = "Figure1_Mosquito_Isolation_sources_201023.pdf", width = 10, height = 11)
 
 # MISC
 MosAIC_tbl_clean2 <- MosAIC_tbl %>%
@@ -138,15 +138,15 @@ MosAIC_tbl_clean2 <- MosAIC_tbl %>%
   mutate(feeding_status = str_replace(feeding_status, "blood", "blood-fed")) %>%
   replace(is.na(.), "1_unknown") %>%
   #mutate(mosquito_species = if_else(mosquito_species == "Aedes aegypti" | 
-                                    #mosquito_species == "Aedes albopictus" |
-                                    #mosquito_species == "Aedes atropalpus" |
-                                    #mosquito_species == "Aedes triseriatus", "Aedes", mosquito_species)) %>%
+  #mosquito_species == "Aedes albopictus" |
+  #mosquito_species == "Aedes atropalpus" |
+  #mosquito_species == "Aedes triseriatus", "Aedes", mosquito_species)) %>%
   #mutate(mosquito_species = if_else(mosquito_species == "Anopheles gambiae" | 
-                                      #mosquito_species == "Anopheles punctipennis" |
-                                      #mosquito_species == "Anopheles quadrimaculatus", "Anopheles", mosquito_species)) %>%
+  #mosquito_species == "Anopheles punctipennis" |
+  #mosquito_species == "Anopheles quadrimaculatus", "Anopheles", mosquito_species)) %>%
   #mutate(mosquito_species = if_else(mosquito_species == "Culex erraticus" | 
-                                      #mosquito_species == "Culex pipiens" |
-                                      #mosquito_species == "Culex pippiens", "Culex",  mosquito_species)) %>%
+  #mosquito_species == "Culex pipiens" |
+  #mosquito_species == "Culex pippiens", "Culex",  mosquito_species)) %>%
   mutate(source = if_else(source == "stable fly", "2_non-mosquito Diptera", source)) %>%
   mutate(source = if_else(life_stage == "larvae", "mosquito", source)) %>%
   mutate(source = if_else(life_stage == "adults", "mosquito", source)) %>%
@@ -186,7 +186,7 @@ MosAIC_tbl_clean2 <- MosAIC_tbl %>%
          "Sex" = sex, 
          "Life stage" = life_stage, 
          "Feeding status" = feeding_status)
-  
+
 MosAIC_formatted <- MosAIC_tbl_clean %>%
   arrange(Source, ) %>%
   make_long(Source, `Mosquito species`, `Life stage`, Sex , `Feeding status`)
@@ -195,18 +195,18 @@ MosAIC_formatted <- MosAIC_tbl_clean %>%
 
 
 pl <- ggplot(MosAIC_formatted, aes(x = x,                        
-                     next_x = next_x,                                     
-                     node = node,
-                     next_node = next_node,        
-                     fill = factor(node),
-                     label = node))             
+                                   next_x = next_x,                                     
+                                   node = node,
+                                   next_node = next_node,        
+                                   fill = factor(node),
+                                   label = node))             
 
 pl <- pl + geom_sankey(flow.alpha = 0.7,         
-                      node.color = "black",     
-                      show.legend = TRUE, 
-                      na.rm = TRUE, 
-                      #smooth = 25,  
-                      width =  0.1)       
+                       node.color = "black",     
+                       show.legend = TRUE, 
+                       na.rm = TRUE, 
+                       #smooth = 25,  
+                       width =  0.1)       
 
 pl <- pl + geom_sankey_label(size = 4.5, 
                              color = "black", 

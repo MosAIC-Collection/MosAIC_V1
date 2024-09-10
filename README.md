@@ -20,5 +20,5 @@ Create a new project in RStudio. To run the scripts in 01_GenomeQC to recreate F
 * Kerri Coon - kerri.coon@wisc.edu
 
 ## Citation 
-Foo A, Brettell LE, Nichols HL, 2022 UW-Madison Capstone in Microbiology Students, Medina Muñoz M, Lysne JA, et al. Establishment and comparative genomics of a high-quality collection of mosquito-associated bacterial isolates - MosAIC (Mosquito-Associated Isolate Collection). 2023 Oct. Available from: http://biorxiv.org/lookup/doi/10.1101/2023.10.04.560816![image](https://github.com/user-attachments/assets/e7f3c8b3-4aee-40be-95c9-73955889693f)
+Foo A, Brettell LE, Nichols HL, 2022 UW-Madison Capstone in Microbiology Students, Medina Muñoz M, Lysne JA, et al. Establishment and comparative genomics of a high-quality collection of mosquito-associated bacterial isolates - MosAIC (Mosquito-Associated Isolate Collection). 2023 Oct. Available from: http://biorxiv.org/lookup/doi/10.1101/2023.10.04.560816
 

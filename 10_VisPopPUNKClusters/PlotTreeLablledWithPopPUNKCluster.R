@@ -7,22 +7,22 @@ library(janitor)
 library(treeio)
 
 # Load Tree
-EA_tree <- read.tree("EnterobacterModel/EnterobacterAsburiae/050423_core_gene_alignment_snp_tree.treefile")
+EA_tree <- read.tree("MosAIC_V1/10_VisPopPUNKClusters/050423_core_gene_alignment_snp_tree.treefile")
 EA_tree_root <- phytools::midpoint.root(EA_tree)
 EA_tree_root$tip.label <- gsub("\\.", "_", EA_tree_root$tip.label)
 
-SM_tree <- read.tree("SerratiaModel/Serratia_marscecens/060323_core_gene_alignment_snp_tree.treefile")
+SM_tree <- read.tree("MosAIC_V1/10_VisPopPUNKClusters/060323_core_gene_alignment_snp_tree.treefile")
 SM_tree_root <- phytools::midpoint.root(SM_tree)
 SM_tree_root$tip.label <- gsub("\\.", "_", SM_tree_root$tip.label)
 
-Eliz_tree <- read.tree("ElizabethkingiaModel/100423_core_gene_alignment_snp_tree.treefile")
+Eliz_tree <- read.tree("MosAIC_V1/10_VisPopPUNKClusters/100423_core_gene_alignment_snp_tree.treefile")
 Eliz_tree_root <- root(Eliz_tree, outgroup = "GCA_025192605.1_ASM2519260v1_genomic.fna") 
 Eliz_tree_root$tip.label <- gsub("\\.", "_", Eliz_tree_root$tip.label)
 
 # Load PopPUNK Data
-EA_PopPunkClusters <- read_tsv("EnterobacterModel/EnterobacterAsburiae/090423_PopPUNK_clusters_refine_clean.tsv")
-SM_PopPunkClusters <- read_tsv("SerratiaModel/Serratia_marscecens/090423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
-Eliz_PopPunkClusters <- read_tsv("ElizabethkingiaModel/260423_PopPUNK_clusters_refine_clean.tsv") %>%
+EA_PopPunkClusters <- read_tsv("MosAIC_V1/10_VisPopPUNKClusters/090423_PopPUNK_clusters_refine_clean.tsv")
+SM_PopPunkClusters <- read_tsv("MosAIC_V1/10_VisPopPUNKClusters/090423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
+Eliz_PopPunkClusters <- read_tsv("MosAIC_V1/10_VisPopPUNKClusters/260423_PopPUNK_clusters_refine_clean.tsv") %>%
   rename(Sample = "Taxon")
 
 ## Function to Make a Renamed Tree based on PopPUNK Data 
@@ -57,7 +57,7 @@ SM_tree_rename <- RenameTreeTipsWithPopPUNK(SM_tree_root, SM_PopPunkClusters)
 Eliz_tree_rename <- RenameTreeTipsWithPopPUNK(Eliz_tree_root, Eliz_PopPunkClusters)
 
 # plot + save
-ggtree(EA_tree_rename, size = 0.2, layout = "circular") + geom_tiplab(offset = 0.001, size = 2)
+ggtree(EA_tree_rename, size = 0.4, layout = "rectangular") + geom_tiplab(offset = 0.01, size = 4)
 ggsave(filename = "EnterobacterModel/EnterobacterAsburiae/260423_EA_PopPUNKCluster_Tree.pdf")
 
 ggtree(SM_tree_rename, size = 0.2, layout = "circular") + geom_tiplab(offset = 0.001, size = 1)

@@ -6,7 +6,7 @@
 library(tidyverse)
 library(janitor)
 
-MosAIC_VF <- read_tsv("210423_MosAIC_VF_Search.tsv") %>%
+MosAIC_VF <- read_tsv("MosAIC_V1/05_Virulence_Factor_Analysis/210423_MosAIC_VF_Search.tsv") %>%
   clean_names()
 
 VFDB_Higher_Categories <- c("Adherence", "Invasion", "Effector delivery system", 

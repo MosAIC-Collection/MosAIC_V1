@@ -10,21 +10,21 @@ library(treeio)
 library(MetBrewer)
 
 ### VFs
-MosAIC_VF_clean <- read_tsv("210423_MosAIC_VF_clean.tsv")
+MosAIC_VF_clean <- read_tsv("MosAIC_V1/05_Virulence_Factor_Analysis/210423_MosAIC_VF_clean.tsv")
 MosAIC_VF_clean$number_file <- gsub("_contig.*", "", MosAIC_VF_clean$number_file)
 
 ### dRep Clusters
-dRep_clusters <- readr::read_tsv("Cdb.txt")
+dRep_clusters <- readr::read_tsv("MosAIC_V1/05_Virulence_Factor_Analysis/Cdb.txt")
 dRep_clusters$genome <- gsub("_contig.*", "", dRep_clusters$genome)
 
-dRep_winning_clusters <- readr::read_csv("Wdb.csv")
+dRep_winning_clusters <- readr::read_csv("MosAIC_V1/05_Virulence_Factor_Analysis/Wdb.csv")
 dRep_winning_clusters$genome <- gsub("_contig.*", "", dRep_winning_clusters$genome)
 
 ### GTDB 
-GTDB_Class <- read_tsv("291122_gtdbtk_isolates_drep.bac120.summary.tsv")
+GTDB_Class <- read_tsv("MosAIC_V1/05_Virulence_Factor_Analysis/291122_gtdbtk_isolates_drep.bac120.summary.tsv")
 GTDB_Class$user_genome <- gsub("_contig.*", "", GTDB_Class$user_genome)
 
-GTDB_Full <- read_tsv("190123_gtdb.bac120.summary_nodrep.tsv")
+GTDB_Full <- read_tsv("MosAIC_V1/05_Virulence_Factor_Analysis/190123_gtdb.bac120.summary_nodrep.tsv")
 GTDB_Full$user_genome <- gsub("_contig.*", "", GTDB_Full$user_genome)
 
 GTDB_Class_Clean <- GTDB_Class %>%
@@ -66,7 +66,7 @@ GTDB_Full_Clean <- GTDB_Full %>%
   select(!c(junk, junk2, junk3, junk4, junk5, junk6, junk7))
 
 ### Tree 
-MosAIC_Tree <- ape::read.tree("MMO142ADJ_240223_concatenated_16s_fileappend_final_aln_trimal.fa.contree")
+MosAIC_Tree <- ape::read.tree("MosAIC_V1/05_Virulence_Factor_Analysis/MMO142ADJ_240223_concatenated_16s_fileappend_final_aln_trimal.fa.contree")
 MosAIC_Tree <- phytools::midpoint.root(MosAIC_Tree)
 
 MosAIC_Tree_Tib <- as_tibble(MosAIC_Tree)

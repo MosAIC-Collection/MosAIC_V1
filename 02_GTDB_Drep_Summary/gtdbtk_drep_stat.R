@@ -8,8 +8,8 @@ library(ggtreeExtra)
 library(grid)
 
 #### Read Data 
-gtdb_class <- read_tsv("291122_gtdbtk_isolates_drep.bac120.summary.tsv")
-drep <- read_csv("291122_Widb.csv")
+gtdb_class <- read_tsv("MosAIC_V1/02_GTDB_Drep_Summary/291122_gtdbtk_isolates_drep.bac120.summary.tsv")
+drep <- read_csv("MosAIC_V1/02_GTDB_Drep_Summary/291122_Widb.csv")
 
 #### Clean GTDB Classifications
 gtdb_class_clean <- gtdb_class %>%

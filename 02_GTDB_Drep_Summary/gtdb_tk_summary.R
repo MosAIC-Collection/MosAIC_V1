@@ -6,7 +6,7 @@ library(tidyverse)
 library(MetBrewer)
 
 #### Read Data 
-gtdb_nodrep <- read_tsv("190123_gtdb.bac120.summary_nodrep.tsv")
+gtdb_nodrep <- read_tsv("MosAIC_V1/02_GTDB_Drep_Summary/190123_gtdb.bac120.summary_nodrep.tsv")
 
 #### Clean
 gtdb_class_clean <- gtdb_nodrep %>%

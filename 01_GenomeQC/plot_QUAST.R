@@ -10,7 +10,7 @@ library(janitor)
 
 
 # Replace All MMO_ with MMO- for correct consistency
-quast <- read_tsv("five_runs_combined_quast_report2.tsv") %>%
+quast <- read_tsv("MosAIC_V1/01_GenomeQC/five_runs_combined_quast_report2.tsv") %>%
   filter(assembly != "Assembly")
 
 # Replace All MMO_ with MMO- for correct consistency

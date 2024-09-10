@@ -15,7 +15,7 @@ library(janitor)
 library(ggstar)
 
 # Read Tree
-Elizabethkingia_Pop <- read.tree("ElizabethkingiaModel/250823_core_gene_alignment_snp_filt.aln.treefile")
+Elizabethkingia_Pop <- read.tree("MosAIC_V1/09_TreeVisRootings/250823_core_gene_alignment_snp_filt.aln.treefile")
 # Convert to Tibble
 Elizabethkingia_Pop_tib <- as_tibble(Elizabethkingia_Pop)
 # Rename 

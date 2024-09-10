@@ -26,12 +26,12 @@ Eliz_cols <- c("Elizabethkingia anophelis" = "#4e79a7",
                "Aedes albopictus" = "#188977")
 
 # Read in the Enterobacter Tree 
-Eliz_tree <- ape::read.tree("ElizabethkingiaModel/100423_core_gene_alignment_snp_tree.treefile")
+Eliz_tree <- ape::read.tree("MosAIC_V1/07c_ElizabethkingiaPangenome/100423_core_gene_alignment_snp_tree.treefile")
 # Root - rooting at the split defined by the genera tree
 Eliz_tree_root <- phytools::midpoint.root(Eliz_tree)
 
 # Read Panaroo Gene Presence Absence File
-Eliz_panaroo_data <- read.table("ElizabethkingiaModel/260423_gene_presence_absence_clean.Rtab", 
+Eliz_panaroo_data <- read.table("MosAIC_V1/07c_ElizabethkingiaPangenome/260423_gene_presence_absence_clean.Rtab", 
                              header = T,
                              sep="\t",
                              quote = "",
@@ -41,7 +41,7 @@ Eliz_panaroo_data <- read.table("ElizabethkingiaModel/260423_gene_presence_absen
 colnames(Eliz_panaroo_data)
 
 # Read the Twilight Gene Classification 
-Eliz_pop_class <- read_tsv("ElizabethkingiaModel/260423_Eliz_output_classification_table.tsv") %>%
+Eliz_pop_class <- read_tsv("MosAIC_V1/07c_ElizabethkingiaPangenome/260423_Eliz_output_classification_table.tsv") %>%
   rename("Gene" = gene_name) %>%
   select(Gene, specific_class)
 
@@ -54,7 +54,7 @@ Eliz_pangenome_w_classification <- Eliz_panaroo_data %>%
 #pangenome_w_classification[["strain"]] <- gsub("\\.", "_", pangenome_w_classification[["strain"]])
 
 # Read in PopPUNK Lineage Clusters 
-Eliz_lineage_data <- read_tsv("ElizabethkingiaModel/260423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
+Eliz_lineage_data <- read_tsv("MosAIC_V1/07c_ElizabethkingiaPangenome/260423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
 # Convert the Cluster column from dbl to fct
 Eliz_lineage_data$Cluster <- as.factor(Eliz_lineage_data$Cluster)
 
@@ -67,7 +67,7 @@ Eliz_pangenome_classfication_lineage %>%
   print(n = 400)
 
 # Read in Enterobacter asrbuiae metadata - clean + filter for isolation source 
-Eliz_metadata <- read_tsv("ElizabethkingiaModel/Elizabethkingiaanophelis_metadata.tsv") %>%
+Eliz_metadata <- read_tsv("MosAIC_V1/07c_ElizabethkingiaPangenome/Elizabethkingiaanophelis_metadata.tsv") %>%
   select(File_prefix, Collection, host_simple, Species)
 
 Eliz_metadata$File_prefix <- substring(Eliz_metadata$File_prefix, 1, 15)
@@ -226,7 +226,7 @@ PlotPopPUNKAndGeneClassification <- function(data, category){
 PlotPopPUNKAndGeneClassification(Eliz_pangenome_classfication_lineage, "Collection core")
 PlotPopPUNKAndGeneClassification(Eliz_pangenome_classfication_lineage, "Lineage specific core")
 ggsave("ElizabethkingiaModel/SupplementaryFigure_LineageSpecificCoreGenes_Elizabethkingia_anophelis_PopPUNKCluster.pdf")
-PlotPopPUNKAndGeneClassification(Eliz_pangenome_classfication_lineage, "Multi-lineage core")
+
 
 Eliz_pangenome_classfication_lineage %>%
   filter(presence == 1) %>%

@@ -5,7 +5,7 @@ library(micropan)
 # Load Dataframe
 df = data.frame(cluster = character(0), richness = numeric(0),genomes = numeric(0),sd = numeric(0))
 # Files in WD
-files = list.files(path = "gene_accumulation_curves", full.names = T, pattern = "*Rtab")
+files = list.files(path = "MosAIC_V1/08_GeneAccumulationCurve/", full.names = T, pattern = "*Rtab")
 # Loop and split the files by "_" 
 for (f in files){
   cluster = strsplit(basename(f), split = "_", fixed = T)[[1]][1]
@@ -18,12 +18,12 @@ for (f in files){
                             sd = sp$sd))
 }
 
-write.table(df, "gene_accumulation_curves/260423_Accumilation_Curve.csv", col.names = T, row.names = F, quote = F, sep = ',')
+write.table(df, "MosAIC_V1/08_GeneAccumulationCurve/260423_Accumilation_Curve.csv", col.names = T, row.names = F, quote = F, sep = ',')
 
 # Read new dataframe 
-df = read.table("gene_accumulation_curves/260423_Accumilation_Curve.csv", header = T, comment.char = "", sep = ",", stringsAsFactors = F)
+df = read.table("MosAIC_V1/08_GeneAccumulationCurve/260423_Accumilation_Curve.csv", header = T, comment.char = "", sep = ",", stringsAsFactors = F)
 df = cbind(df, min= df$richness-df$sd, max = df$richness+df$sd )
-df$cluster = factor(df$cluster,cluster_sizes$Cluster)
+#df$cluster = factor(df$cluster,df$Cluster)
 df = df[which(df$genomes %% 10 == 0),] ## to visualise more clearly
 
 # Plot

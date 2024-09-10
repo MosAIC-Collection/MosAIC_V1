@@ -58,12 +58,12 @@ cols <- c("Serratia entomophila" = "#4e79a7",
 
 
 # Read in the Enterobacter Tree 
-serratia_tree <- ape::read.tree("SerratiaModel/Serratia_marscecens/060323_core_gene_alignment_snp_tree.treefile")
+serratia_tree <- ape::read.tree("MosAIC_V1/07a_SerratiaPangenome/060323_core_gene_alignment_snp_tree.treefile")
 # Root - rooting at the split defined by the genera tree
 serratia_tree_root <- phytools::midpoint.root(serratia_tree)
 
 # Read Panaroo Gene Presence Absence File
-S_panaroo_data <- read.table("SerratiaModel/Serratia_marscecens/090423_gene_presence_absence_clean.Rtab", 
+S_panaroo_data <- read.table("MosAIC_V1/07a_SerratiaPangenome/090423_gene_presence_absence_clean.Rtab", 
                              header = T,
                              sep="\t",
                              quote = "",
@@ -72,7 +72,7 @@ S_panaroo_data <- read.table("SerratiaModel/Serratia_marscecens/090423_gene_pres
                              check.names = F)
 
 # Read the Twilight Gene Classification 
-S_pop_class <- read_tsv("SerratiaModel/Serratia_marscecens/104023_output_classification_table.tsv") %>%
+S_pop_class <- read_tsv("MosAIC_V1/07a_SerratiaPangenome/104023_output_classification_table.tsv") %>%
   rename("Gene" = gene_name) %>%
   select(Gene, specific_class)
 
@@ -85,20 +85,20 @@ S_pangenome_w_classification <- S_panaroo_data %>%
 #pangenome_w_classification[["strain"]] <- gsub("\\.", "_", pangenome_w_classification[["strain"]])
 
 # Read in PopPUNK Lineage Clusters 
-S_lineage_data <- read_tsv("SerratiaModel/Serratia_marscecens/090423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
+S_lineage_data <- read_tsv("MosAIC_V1/07a_SerratiaPangenome/090423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
 # Convert the Cluster column from dbl to fct
 S_lineage_data$Cluster <- as.factor(S_lineage_data$Cluster)
 
 # Join with Panaroo Gene Presence + Absence + Twilight Classifications
 S_pangenome_classfication_lineage <- S_pangenome_w_classification %>%
-  left_join(S_lineage_data, by = c("strain" =  "Taxon"))
+  left_join(S_lineage_data, by = c("strain" =  "Sample"))
 
 S_pangenome_classfication_lineage %>% 
   group_by(Cluster) %>% summarise(n()) %>% 
   print(n = 400)
 
 # Read in Enterobacter asrbuiae metadata - clean + filter for isolation source 
-S_metadata <- read_csv("SerratiaModel/serratia_metadata.csv") %>%
+S_metadata <- read_csv("MosAIC_V1/07a_SerratiaPangenome/serratia_metadata.csv") %>%
   select(File_prefix, Collection, host_simple, Species)
 
 S_metadata$File_prefix <- substring(S_metadata$File_prefix, 1, 15)
@@ -107,8 +107,9 @@ S_metadata[["File_prefix"]] <- gsub("\\.", "_", S_metadata[["File_prefix"]])
 
 colnames(S_metadata)
 S_metadata$File_prefix
-S_metadata %>% group_by(Generic_host) %>%
+S_metadata %>% group_by(host_simple) %>%
   summarise(n())
+
 # Establish Gals Twilight Collection Categories
 twilight_order <- c("Collection core", 
                     "Multi-lineage core",
@@ -206,7 +207,7 @@ for (i in 1:length(twilight_order)){
   
   ggsave(glue::glue("SerratiaModel/Serratia_marscecens/140423_plot_{class}.pdf"), height = 7.7*3, width = (5 + (5*plot_width))*3, units = "cm", limitsize = F)
 
-}
+} # Would you like to create a new directory? - say Yes
 
 ##### Statistics
 ### How many genes in the collection core? (core genome)
@@ -251,7 +252,6 @@ PlotPopPUNKAndGeneClassification <- function(data, category){
 PlotPopPUNKAndGeneClassification(S_pangenome_classfication_lineage, "Collection core")
 PlotPopPUNKAndGeneClassification(S_pangenome_classfication_lineage, "Lineage specific core")
 ggsave("SerratiaModel/PlotsFinal/SupplementaryFigure_LineageSpecificCoreGenes_PopPUNKCluster.pdf")
-PlotPopPUNKAndGeneClassification(E_pangenome_classfication_lineage, "Multi-lineage core")
 
 
 ### Misc

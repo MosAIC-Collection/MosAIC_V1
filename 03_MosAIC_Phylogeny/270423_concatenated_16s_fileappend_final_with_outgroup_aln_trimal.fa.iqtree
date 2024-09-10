@@ -1,0 +1,688 @@
+IQ-TREE 2.0.7 built Jan 21 2022
+
+Input file name: 270423_concatenated_16s_fileappend_final_with_outgroup_aln_trimal.fa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 750707
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 143 sequences with 1287 nucleotide sites
+Number of constant sites: 653 (= 50.7382% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 653 (= 50.7382% of all sites)
+Number of parsimony informative sites: 589
+Number of distinct site patterns: 728
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM3+F+R6
+
+Rate parameter R:
+
+  A-C: 0.6716
+  A-G: 2.1927
+  A-T: 1.0000
+  C-G: 0.6716
+  C-T: 3.6332
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2474
+  pi(C) = 0.2315
+  pi(G) = 0.3176
+  pi(T) = 0.2035
+
+Rate matrix Q:
+
+  A   -0.9661    0.1423    0.6375    0.1863
+  C    0.1521    -1.024    0.1953    0.6768
+  G    0.4965    0.1423    -0.825    0.1863
+  T    0.2264    0.7698    0.2907    -1.287
+
+Model of rate heterogeneity: FreeRate with 6 categories
+Site proportion and rates:  (0.547,0.03306) (0.05116,0.4784) (0.09993,0.4784) (0.1446,1.353) (0.1152,3.243) (0.04212,8.082)
+
+ Category  Relative_rate  Proportion
+  1         0.03306        0.547
+  2         0.4784         0.05116
+  3         0.4784         0.09993
+  4         1.353          0.1446
+  5         3.243          0.1152
+  6         8.082          0.04212
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -19817.9724 (s.e. 709.9434)
+Unconstrained log-likelihood (without tree): -7644.0221
+Number of free parameters (#branches + #model parameters): 297
+Akaike information criterion (AIC) score: 40229.9448
+Corrected Akaike information criterion (AICc) score: 40408.9255
+Bayesian information criterion (BIC) score: 41762.4853
+
+Total tree length (sum of branch lengths): 4.4151
+Sum of internal branch lengths: 2.7784 (62.9299% of tree length)
+
+WARNING: 16 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MMO-142_contigs_16s' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--MMO-142_contigs_16s
+|
++**MMO-68_contigs_16s
+|
+|                    +**USMM049_contigs_16s
+|                 +--| (73)
+|                 |  |        +--USHLN009_contigs_16s
+|                 |  |     +--| (99)
+|                 |  |     |  +--USHLN267_contigs_16s
+|                 |  |  +--| (100)
+|                 |  |  |  +--MMO-17_contigs_16s
+|                 |  +--| (100)
+|                 |     |  +**MMO-72_contigs_16s
+|                 |     +--| (100)
+|                 |        +--USHLN227_contigs_16s
+|          +------| (100)
+|          |      +--USMM094_contigs_16s
++----------| (100)
+           |                              +---USHLN139_contigs_16s
+           |                           +--| (100)
+           |                           |  |  +--HN128_contigs_16s
+           |                           |  +--| (100)
+           |                           |     |  +--HN010_contigs_16s
+           |                           |     +**| (70)
+           |                           |        +**HN182_contigs_16s
+           |                      +----| (100)
+           |                      |    |                +--MMO-176_contigs_16s
+           |                      |    |           +----| (100)
+           |                      |    |           |    +--VD7_contigs_16s
+           |                      |    |        +--| (71)
+           |                      |    |        |  +--USHLN278_contigs_16s
+           |                      |    |     +--| (70)
+           |                      |    |     |  +--MMO-174_contigs_16s
+           |                      |    |  +--| (80)
+           |                      |    |  |  |  +--MMO-172_contigs_16s
+           |                      |    |  |  +--| (100)
+           |                      |    |  |     +---MMO-173_contigs_16s
+           |                      |    +--| (91)
+           |                      |       |    +--USMM102_contigs_16s
+           |                      |       +----| (100)
+           |                      |            +--USMM111_contigs_16s
+           |                   +--| (84)
+           |                   |  |           +----MMO-124_contigs_16s
+           |                   |  |      +----| (100)
+           |                   |  |      |    |  +---MMO-42_contigs_16s
+           |                   |  |      |    +--| (93)
+           |                   |  |      |       +--VD34_contigs_16s
+           |                   |  |   +--| (94)
+           |                   |  |   |  |                                 +--HN121_contigs_16s
+           |                   |  |   |  |                              +--| (95)
+           |                   |  |   |  |                              |  |     +**MMO-143_contigs_16s
+           |                   |  |   |  |                              |  |  +**| (98)
+           |                   |  |   |  |                              |  |  |  |  +**HN059_contigs_16s
+           |                   |  |   |  |                              |  |  |  +**| (62)
+           |                   |  |   |  |                              |  |  |     +**MMO-163_contigs_16s
+           |                   |  |   |  |                              |  +--| (99)
+           |                   |  |   |  |                              |     +**AA010_contigs_16s
+           |                   |  |   |  |                           +--| (54)
+           |                   |  |   |  |                           |  +--USHLN143_contigs_16s
+           |                   |  |   |  |                        +**| (45)
+           |                   |  |   |  |                        |  +**AS096_contigs_16s
+           |                   |  |   |  |                     +--| (40)
+           |                   |  |   |  |                     |  +--HN020_contigs_16s
+           |                   |  |   |  |                  +--| (63)
+           |                   |  |   |  |                  |  +--AS013_contigs_16s
+           |                   |  |   |  |               +--| (60)
+           |                   |  |   |  |               |  +**AS167_contigs_16s
+           |                   |  |   |  |            +--| (62)
+           |                   |  |   |  |            |  +--HN105_contigs_16s
+           |                   |  |   |  |         +--| (61)
+           |                   |  |   |  |         |  +--AS116_contigs_16s
+           |                   |  |   |  |     +---| (100)
+           |                   |  |   |  |     |   +--HN126_contigs_16s
+           |                   |  |   |  |  +--| (75)
+           |                   |  |   |  |  |  |                                                        +--AS234_contigs_16s
+           |                   |  |   |  |  |  |                                                     +--| (98)
+           |                   |  |   |  |  |  |                                                     |  +--USHLN263_contigs_16s
+           |                   |  |   |  |  |  |                                                  +--| (81)
+           |                   |  |   |  |  |  |                                                  |  +--USHLN165_contigs_16s
+           |                   |  |   |  |  |  |                                               +--| (58)
+           |                   |  |   |  |  |  |                                               |  |        +**AS142_contigs_16s
+           |                   |  |   |  |  |  |                                               |  |     +**| (80)
+           |                   |  |   |  |  |  |                                               |  |     |  +--USHLN198_contigs_16s
+           |                   |  |   |  |  |  |                                               |  |  +--| (97)
+           |                   |  |   |  |  |  |                                               |  |  |  +**USMM080_contigs_16s
+           |                   |  |   |  |  |  |                                               |  +--| (53)
+           |                   |  |   |  |  |  |                                               |     |  +**AS129_contigs_16s
+           |                   |  |   |  |  |  |                                               |     +--| (67)
+           |                   |  |   |  |  |  |                                               |        |  +**USHLN298_contigs_16s
+           |                   |  |   |  |  |  |                                               |        +--| (68)
+           |                   |  |   |  |  |  |                                               |           +--HN019_contigs_16s
+           |                   |  |   |  |  |  |                                            +--| (62)
+           |                   |  |   |  |  |  |                                            |  |  +--USHLN162_contigs_16s
+           |                   |  |   |  |  |  |                                            |  +--| (100)
+           |                   |  |   |  |  |  |                                            |     |  +--AS031_contigs_16s
+           |                   |  |   |  |  |  |                                            |     +--| (100)
+           |                   |  |   |  |  |  |                                            |        +--AS126_contigs_16s
+           |                   |  |   |  |  |  |                                         +--| (58)
+           |                   |  |   |  |  |  |                                         |  |  +**USHLN32_contigs_16s
+           |                   |  |   |  |  |  |                                         |  +--| (88)
+           |                   |  |   |  |  |  |                                         |     +--USHLN256_contigs_16s
+           |                   |  |   |  |  |  |                                      +--| (55)
+           |                   |  |   |  |  |  |                                      |  |        +--AS209_contigs_16s
+           |                   |  |   |  |  |  |                                      |  |     +**| (47)
+           |                   |  |   |  |  |  |                                      |  |     |  +**HN028_contigs_16s
+           |                   |  |   |  |  |  |                                      |  |  +--| (71)
+           |                   |  |   |  |  |  |                                      |  |  |  +--AS183_contigs_16s
+           |                   |  |   |  |  |  |                                      |  +**| (54)
+           |                   |  |   |  |  |  |                                      |     |  +**HN162_contigs_16s
+           |                   |  |   |  |  |  |                                      |     +--| (100)
+           |                   |  |   |  |  |  |                                      |        +**USHLN157_contigs_16s
+           |                   |  |   |  |  |  |                                   +**| (47)
+           |                   |  |   |  |  |  |                                   |  |  +**AS216_contigs_16s
+           |                   |  |   |  |  |  |                                   |  +--| (100)
+           |                   |  |   |  |  |  |                                   |     +**USHLN178_contigs_16s
+           |                   |  |   |  |  |  |                                +--| (49)
+           |                   |  |   |  |  |  |                                |  +--USMM078_contigs_16s
+           |                   |  |   |  |  |  |                             +**| (53)
+           |                   |  |   |  |  |  |                             |  |  +--M50_contigs_16s
+           |                   |  |   |  |  |  |                             |  +--| (50)
+           |                   |  |   |  |  |  |                             |     +--AS230_contigs_16s
+           |                   |  |   |  |  |  |                          +--| (59)
+           |                   |  |   |  |  |  |                          |  +--AS212_contigs_16s
+           |                   |  |   |  |  |  |                       +**| (23)
+           |                   |  |   |  |  |  |                       |  +**AS124_contigs_16s
+           |                   |  |   |  |  |  |                    +**| (47)
+           |                   |  |   |  |  |  |                    |  +**AS011_contigs_16s
+           |                   |  |   |  |  |  |                 +**| (45)
+           |                   |  |   |  |  |  |                 |  |  +**HN125_contigs_16s
+           |                   |  |   |  |  |  |                 |  +**| (67)
+           |                   |  |   |  |  |  |                 |     |  +**HN037_contigs_16s
+           |                   |  |   |  |  |  |                 |     +**| (23)
+           |                   |  |   |  |  |  |                 |        +--USHLN167_contigs_16s
+           |                   |  |   |  |  |  |              +--| (55)
+           |                   |  |   |  |  |  |              |  |        +--AS231_contigs_16s
+           |                   |  |   |  |  |  |              |  |     +--| (100)
+           |                   |  |   |  |  |  |              |  |     |  |  +--AS235_contigs_16s
+           |                   |  |   |  |  |  |              |  |     |  +--| (100)
+           |                   |  |   |  |  |  |              |  |     |     +--VD11_contigs_16s
+           |                   |  |   |  |  |  |              |  |  +--| (98)
+           |                   |  |   |  |  |  |              |  |  |  |  +--USHLN06_contigs_16s
+           |                   |  |   |  |  |  |              |  |  |  +--| (99)
+           |                   |  |   |  |  |  |              |  |  |     +**VD5_contigs_16s
+           |                   |  |   |  |  |  |              |  +--| (95)
+           |                   |  |   |  |  |  |              |     +--USMM130_contigs_16s
+           |                   |  |   |  |  |  |           +--| (78)
+           |                   |  |   |  |  |  |           |  +--USHLN005_contigs_16s
+           |                   |  |   |  |  |  |        +--| (60)
+           |                   |  |   |  |  |  |        |  |     +--HN079_contigs_16s
+           |                   |  |   |  |  |  |        |  |  +--| (95)
+           |                   |  |   |  |  |  |        |  |  |  |  +--HN166_contigs_16s
+           |                   |  |   |  |  |  |        |  |  |  +--| (92)
+           |                   |  |   |  |  |  |        |  |  |     +**USHLN010_contigs_16s
+           |                   |  |   |  |  |  |        |  +--| (92)
+           |                   |  |   |  |  |  |        |     +--HN151_contigs_16s
+           |                   |  |   |  |  |  |     +--| (94)
+           |                   |  |   |  |  |  |     |  +--HN039_contigs_16s
+           |                   |  |   |  |  |  +-----| (100)
+           |                   |  |   |  |  |        +--MMO-36_contigs_16s
+           |                   |  |   |  +--| (100)
+           |                   |  |   |     |     +--USMM045_contigs_16s
+           |                   |  |   |     |  +--| (98)
+           |                   |  |   |     |  |  +--VD15_contigs_16s
+           |                   |  |   |     +--| (100)
+           |                   |  |   |        +--USHLN015_contigs_16s
+           |                   |  +---| (100)
+           |                   |      |      +--MMO-164_contigs_16s
+           |                   |      |   +--| (99)
+           |                   |      |   |  +**USMM131_contigs_16s
+           |                   |      +---| (100)
+           |                   |          |  +--USHLN014_contigs_16s
+           |                   |          +--| (100)
+           |                   |             +--USHLN149_contigs_16s
+           +-------------------| (100)
+                               |              +--USMM236_contigs_16s
+                               |           +--| (100)
+                               |           |  |     +--USHLN150_contigs_16s
+                               |           |  |  +--| (100)
+                               |           |  |  |  +--USMM241_contigs_16s
+                               |           |  +--| (95)
+                               |           |     |  +--MMO-152_contigs_16s
+                               |           |     +--| (100)
+                               |           |        +--MMO-8_contigs_16s
+                               |     +-----| (100)
+                               |     |     |        +--USHLN155_contigs_16s
+                               |     |     |     +--| (100)
+                               |     |     |     |  +--USHLN208_contigs_16s
+                               |     |     |  +--| (94)
+                               |     |     |  |  |        +--USHLN234_contigs_16s
+                               |     |     |  |  |     +--| (92)
+                               |     |     |  |  |     |  +--USHLN218_contigs_16s
+                               |     |     |  |  |  +--| (100)
+                               |     |     |  |  |  |  |  +--MMO-141_contigs_16s
+                               |     |     |  |  |  |  +--| (100)
+                               |     |     |  |  |  |     +--MMO-160_contigs_16s
+                               |     |     |  |  +--| (100)
+                               |     |     |  |     |  +--USHLN217_contigs_16s
+                               |     |     |  |     +--| (100)
+                               |     |     |  |        +--USHLN215_contigs_16s
+                               |     |     +--| (100)
+                               |     |        |              +--MMO-56_contigs_16s
+                               |     |        |           +--| (100)
+                               |     |        |           |  +--MMO-64_contigs_16s
+                               |     |        |        +--| (71)
+                               |     |        |        |  |     +--USHLN272_contigs_16s
+                               |     |        |        |  |  +--| (98)
+                               |     |        |        |  |  |  +--LB16_contigs_16s
+                               |     |        |        |  +--| (98)
+                               |     |        |        |     +--MMO-113_contigs_16s
+                               |     |        |     +**| (64)
+                               |     |        |     |  +--MMO-35_contigs_16s
+                               |     |        |  +--| (100)
+                               |     |        |  |  +--USHLN186_contigs_16s
+                               |     |        +--| (100)
+                               |     |           |  +--USHLN213_contigs_16s
+                               |     |           +--| (98)
+                               |     |              |        +--VD1_contigs_16s
+                               |     |              |     +--| (80)
+                               |     |              |     |  +--USHLN154_contigs_16s
+                               |     |              |  +--| (80)
+                               |     |              |  |  +--USHLN153_contigs_16s
+                               |     |              +--| (100)
+                               |     |                 +**MMO-57_contigs_16s
+                               |  +--| (94)
+                               |  |  +--------------------16S_rRNA
+                               +--| (98)
+                                  |           +**USMM099_contigs_16s
+                                  |        +--| (71)
+                                  |        |  +--USHLN196_contigs_16s
+                                  |     +--| (100)
+                                  |     |  |  +--MMO-59_contigs_16s
+                                  |     |  +**| (46)
+                                  |     |     |  +--MMO-177_contigs_16s
+                                  |     |     +--| (98)
+                                  |     |        +**MMO-58_contigs_16s
+                                  +-----| (100)
+                                        |           +--USHLN273_contigs_16s
+                                        |        +--| (99)
+                                        |        |  +--USHLN028_contigs_16s
+                                        |     +--| (83)
+                                        |     |  |                    +--AS224_contigs_16s
+                                        |     |  |                 +--| (100)
+                                        |     |  |                 |  |        +**MMO-31_contigs_16s
+                                        |     |  |                 |  |     +--| (100)
+                                        |     |  |                 |  |     |  +--MMO-81_contigs_16s
+                                        |     |  |                 |  |  +--| (97)
+                                        |     |  |                 |  |  |  +--CR11_contigs_16s
+                                        |     |  |                 |  +--| (97)
+                                        |     |  |                 |     |  +--USHLN169_contigs_16s
+                                        |     |  |                 |     +--| (99)
+                                        |     |  |                 |        |     +**AS218_contigs_16s
+                                        |     |  |                 |        |  +--| (100)
+                                        |     |  |                 |        |  |  +**MMO-140_contigs_16s
+                                        |     |  |                 |        +--| (100)
+                                        |     |  |                 |           +--MMO-47_contigs_16s
+                                        |     |  |              +--| (40)
+                                        |     |  |              |  |     +--MMO-19_contigs_16s
+                                        |     |  |              |  |  +--| (100)
+                                        |     |  |              |  |  |  +--USMM125_contigs_16s
+                                        |     |  |              |  +--| (53)
+                                        |     |  |              |     |  +**USHLN181_contigs_16s
+                                        |     |  |              |     +--| (100)
+                                        |     |  |              |        +**USMM093_contigs_16s
+                                        |     |  |           +--| (49)
+                                        |     |  |           |  +--USHLN023_contigs_16s
+                                        |     |  |        +--| (59)
+                                        |     |  |        |  +--USHLN018_contigs_16s
+                                        |     |  |     +--| (59)
+                                        |     |  |     |  +--USMM117_contigs_16s
+                                        |     |  |  +--| (58)
+                                        |     |  |  |  +--MMO-108_contigs_16s
+                                        |     |  +--| (93)
+                                        |     |     |  +--S315_contigs_16s
+                                        |     |     +--| (94)
+                                        |     |        |  +--USHLN197_contigs_16s
+                                        |     |        +--| (100)
+                                        |     |           |  +--MMO-114_contigs_16s
+                                        |     |           +--| (91)
+                                        |     |              +--USHLN188_contigs_16s
+                                        |  +--| (98)
+                                        |  |  +--USHLN248_contigs_16s
+                                        +--| (99)
+                                           +--USHLN293_contigs_16s
+
+Tree in newick format:
+
+(MMO-142_contigs_16s:0.0024785984,MMO-68_contigs_16s:0.0000027490,(((USMM049_contigs_16s:0.0000022536,(((USHLN009_contigs_16s:0.0141359110,USHLN267_contigs_16s:0.0017718194)99:0.0039888231,MMO-17_contigs_16s:0.0063391519)100:0.0086977343,(MMO-72_contigs_16s:0.0000023738,USHLN227_contigs_16s:0.0055246196)100:0.0151067620)100:0.0507805192)73:0.0068854198,USMM094_contigs_16s:0.0048244452)100:0.1145087284,((((USHLN139_contigs_16s:0.0655592991,(HN128_contigs_16s:0.0030885208,(HN010_contigs_16s:0.0030878596,HN182_contigs_16s:0.0000011334)70:0.0000027128)100:0.0541756402)100:0.0505963963,(((((MMO-176_contigs_16s:0.0118278071,VD7_contigs_16s:0.0159328364)100:0.0881613429,USHLN278_contigs_16s:0.0390997350)71:0.0175019621,MMO-174_contigs_16s:0.0405670437)70:0.0207379005,(MMO-172_contigs_16s:0.0289194359,MMO-173_contigs_16s:0.0654747668)100:0.0272855443)80:0.0167156212,(USMM102_contigs_16s:0.0034848597,USMM111_contigs_16s:0.0081598460)100:0.0772099869)91:0.0527232268)100:0.0868478883,(((MMO-124_contigs_16s:0.0787602284,(MMO-42_contigs_16s:0.0712369983,VD34_contigs_16s:0.0445874681)93:0.0128886761)100:0.0777921046,(((((((((((HN121_contigs_16s:0.0078275794,((MMO-143_contigs_16s:0.0000011334,(HN059_contigs_16s:0.0000011334,MMO-163_contigs_16s:0.0000011334)62:0.0000011334)98:0.0007668019,AA010_contigs_16s:0.0000027076)99:0.0036441132)95:0.0083413933,USHLN143_contigs_16s:0.0058351973)54:0.0075375270,AS096_contigs_16s:0.0000028996)45:0.0000028507,HN020_contigs_16s:0.0070643136)40:0.0038870019,AS013_contigs_16s:0.0047096375)63:0.0063150683,AS167_contigs_16s:0.0000032711)60:0.0015695002,HN105_contigs_16s:0.0014994087)62:0.0063508340,AS116_contigs_16s:0.0030962430)61:0.0029646302,HN126_contigs_16s:0.0010115840)100:0.0717404053,((((((((((((((((((AS234_contigs_16s:0.0398694261,USHLN263_contigs_16s:0.0135827876)98:0.0140267400,USHLN165_contigs_16s:0.0078189925)81:0.0017795594,(((AS142_contigs_16s:0.0000011334,USHLN198_contigs_16s:0.0014146783)80:0.0000024537,USMM080_contigs_16s:0.0000011334)97:0.0027524512,(AS129_contigs_16s:0.0000022393,(USHLN298_contigs_16s:0.0000027586,HN019_contigs_16s:0.0103122685)68:0.0038561125)67:0.0018921544)53:0.0027076027)58:0.0029252432,(USHLN162_contigs_16s:0.0030610277,(AS031_contigs_16s:0.0033619616,AS126_contigs_16s:0.0028508856)100:0.0034608169)100:0.0079916246)62:0.0064377177,(USHLN32_contigs_16s:0.0000029818,USHLN256_contigs_16s:0.0059541475)88:0.0010839176)58:0.0010480274,(((AS209_contigs_16s:0.0066438835,HN028_contigs_16s:0.0000032138)47:0.0000025852,AS183_contigs_16s:0.0014110921)71:0.0046859977,(HN162_contigs_16s:0.0000011334,USHLN157_contigs_16s:0.0000030046)100:0.0032277562)54:0.0000024327)55:0.0031560138,(AS216_contigs_16s:0.0000011334,USHLN178_contigs_16s:0.0000011334)100:0.0029139236)47:0.0000027166,USMM078_contigs_16s:0.0028485392)49:0.0007845657,(M50_contigs_16s:0.0055402938,AS230_contigs_16s:0.0010897029)50:0.0015726603)53:0.0007524662,AS212_contigs_16s:0.0023813735)59:0.0027183018,AS124_contigs_16s:0.0000011334)23:0.0000027503,AS011_contigs_16s:0.0000011334)47:0.0007215331,(HN125_contigs_16s:0.0000011334,(HN037_contigs_16s:0.0000011334,USHLN167_contigs_16s:0.0014199352)23:0.0000032950)67:0.0000028676)45:0.0004950977,(((AS231_contigs_16s:0.0112814928,(AS235_contigs_16s:0.0067647835,VD11_contigs_16s:0.0027700364)100:0.0007806214)100:0.0024199095,(USHLN06_contigs_16s:0.0047714042,VD5_contigs_16s:0.0000027933)99:0.0019228992)98:0.0020384799,USMM130_contigs_16s:0.0062384481)95:0.0041699382)55:0.0043647188,USHLN005_contigs_16s:0.0024756799)78:0.0132640724,((HN079_contigs_16s:0.0046389666,(HN166_contigs_16s:0.0066715675,USHLN010_contigs_16s:0.0000032396)92:0.0063885615)95:0.0024799435,HN151_contigs_16s:0.0014338132)92:0.0043322038)60:0.0045730331,HN039_contigs_16s:0.0075216205)94:0.0168230163,MMO-36_contigs_16s:0.0322181442)100:0.0916937104)75:0.0072212325,((USMM045_contigs_16s:0.0190812129,VD15_contigs_16s:0.0010915336)98:0.0090667753,USHLN015_contigs_16s:0.0171153994)100:0.0499317545)100:0.0345967534)94:0.0281380539,((MMO-164_contigs_16s:0.0015519747,USMM131_contigs_16s:0.0000011334)99:0.0057996113,(USHLN014_contigs_16s:0.0115644674,USHLN149_contigs_16s:0.0038386945)100:0.0187751823)100:0.0686150681)100:0.0611385609)84:0.0128097573,((((USMM236_contigs_16s:0.0211976522,((USHLN150_contigs_16s:0.0061776890,USMM241_contigs_16s:0.0044730803)100:0.0225397269,(MMO-152_contigs_16s:0.0054870638,MMO-8_contigs_16s:0.0060534024)100:0.0306471346)95:0.0129927498)100:0.0327998565,(((USHLN155_contigs_16s:0.0147732275,USHLN208_contigs_16s:0.0185069723)100:0.0186525223,(((USHLN234_contigs_16s:0.0319186434,USHLN218_contigs_16s:0.0050245269)92:0.0065217620,(MMO-141_contigs_16s:0.0124431712,MMO-160_contigs_16s:0.0021696951)100:0.0222226819)100:0.0055161176,(USHLN217_contigs_16s:0.0234488655,USHLN215_contigs_16s:0.0057805449)100:0.0037373991)100:0.0242210709)94:0.0057537487,(((((MMO-56_contigs_16s:0.0016777175,MMO-64_contigs_16s:0.0023063173)100:0.0076514095,((USHLN272_contigs_16s:0.0021158145,LB16_contigs_16s:0.0057186607)98:0.0012429540,MMO-113_contigs_16s:0.0009554247)98:0.0019026596)71:0.0017068163,MMO-35_contigs_16s:0.0022986298)64:0.0000023945,USHLN186_contigs_16s:0.0064118173)100:0.0293991465,(USHLN213_contigs_16s:0.0082163449,(((VD1_contigs_16s:0.0114430348,USHLN154_contigs_16s:0.0065947762)80:0.0032440397,USHLN153_contigs_16s:0.0007962403)80:0.0058910254,MMO-57_contigs_16s:0.0000023548)100:0.0197023212)98:0.0089256640)100:0.0193327862)100:0.0231027961)100:0.1001635752,16S_rRNA:0.3276360087)94:0.0411381707,(((USMM099_contigs_16s:0.0000032856,USHLN196_contigs_16s:0.0070247597)71:0.0094441644,(MMO-59_contigs_16s:0.0495584712,(MMO-177_contigs_16s:0.0011048274,MMO-58_contigs_16s:0.0000011334)98:0.0242982638)46:0.0000023617)100:0.0403596246,((((USHLN273_contigs_16s:0.0222024873,USHLN028_contigs_16s:0.0192530072)99:0.0178818779,(((((((AS224_contigs_16s:0.0060265997,(((MMO-31_contigs_16s:0.0000026603,MMO-81_contigs_16s:0.0009075402)100:0.0037236037,CR11_contigs_16s:0.0030665162)97:0.0028603990,(USHLN169_contigs_16s:0.0040939439,((AS218_contigs_16s:0.0000011334,MMO-140_contigs_16s:0.0000011334)100:0.0024178036,MMO-47_contigs_16s:0.0016004243)100:0.0031330945)99:0.0024968969)97:0.0042959756)100:0.0454692719,((MMO-19_contigs_16s:0.0043763527,USMM125_contigs_16s:0.0090997369)100:0.0391616230,(USHLN181_contigs_16s:0.0000011334,USMM093_contigs_16s:0.0000011334)100:0.0179963329)53:0.0046342436)40:0.0044920026,USHLN023_contigs_16s:0.0072594185)49:0.0043723815,USHLN018_contigs_16s:0.0128488216)59:0.0050073361,USMM117_contigs_16s:0.0091275406)59:0.0032171745,MMO-108_contigs_16s:0.0166754577)58:0.0059477918,(S315_contigs_16s:0.0198559686,(USHLN197_contigs_16s:0.0009140900,(MMO-114_contigs_16s:0.0088482787,USHLN188_contigs_16s:0.0025078057)91:0.0045436297)100:0.0113130509)94:0.0060822570)93:0.0158649876)83:0.0033748374,USHLN248_contigs_16s:0.0290892746)98:0.0091776533,USHLN293_contigs_16s:0.0400967387)99:0.0251194059)100:0.0970628155)98:0.0593091651)100:0.3047381350)100:0.1645124458);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -19817.993743
+Robinson-Foulds distance between ML tree and consensus tree: 6
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--MMO-142_contigs_16s
+|
++--MMO-68_contigs_16s
+|
+|                    +--USMM049_contigs_16s
+|                 +--| (73)
+|                 |  |        +--USHLN009_contigs_16s
+|                 |  |     +--| (99)
+|                 |  |     |  +--USHLN267_contigs_16s
+|                 |  |  +--| (100)
+|                 |  |  |  +--MMO-17_contigs_16s
+|                 |  +--| (100)
+|                 |     |  +--MMO-72_contigs_16s
+|                 |     +--| (100)
+|                 |        +--USHLN227_contigs_16s
+|          +------| (100)
+|          |      +--USMM094_contigs_16s
++----------| (100)
+           |                              +---USHLN139_contigs_16s
+           |                           +--| (100)
+           |                           |  |  +--HN128_contigs_16s
+           |                           |  +--| (100)
+           |                           |     |  +--HN010_contigs_16s
+           |                           |     +--| (70)
+           |                           |        +--HN182_contigs_16s
+           |                      +----| (100)
+           |                      |    |                +--MMO-176_contigs_16s
+           |                      |    |           +----| (100)
+           |                      |    |           |    +--VD7_contigs_16s
+           |                      |    |        +--| (71)
+           |                      |    |        |  +--USHLN278_contigs_16s
+           |                      |    |     +--| (70)
+           |                      |    |     |  +--MMO-174_contigs_16s
+           |                      |    |  +--| (80)
+           |                      |    |  |  |  +--MMO-172_contigs_16s
+           |                      |    |  |  +--| (100)
+           |                      |    |  |     +---MMO-173_contigs_16s
+           |                      |    +--| (91)
+           |                      |       |    +--USMM102_contigs_16s
+           |                      |       +----| (100)
+           |                      |            +--USMM111_contigs_16s
+           |                   +--| (84)
+           |                   |  |           +----MMO-124_contigs_16s
+           |                   |  |      +----| (100)
+           |                   |  |      |    |  +---MMO-42_contigs_16s
+           |                   |  |      |    +--| (93)
+           |                   |  |      |       +--VD34_contigs_16s
+           |                   |  |   +--| (94)
+           |                   |  |   |  |                                 +--HN121_contigs_16s
+           |                   |  |   |  |                              +--| (95)
+           |                   |  |   |  |                              |  |     +--MMO-143_contigs_16s
+           |                   |  |   |  |                              |  |  +--| (98)
+           |                   |  |   |  |                              |  |  |  |  +--HN059_contigs_16s
+           |                   |  |   |  |                              |  |  |  +--| (62)
+           |                   |  |   |  |                              |  |  |     +--MMO-163_contigs_16s
+           |                   |  |   |  |                              |  +--| (99)
+           |                   |  |   |  |                              |     +--AA010_contigs_16s
+           |                   |  |   |  |                           +--| (54)
+           |                   |  |   |  |                           |  +--USHLN143_contigs_16s
+           |                   |  |   |  |                        +--| (45)
+           |                   |  |   |  |                        |  +--AS096_contigs_16s
+           |                   |  |   |  |                     +--| (40)
+           |                   |  |   |  |                     |  +--HN020_contigs_16s
+           |                   |  |   |  |                  +--| (63)
+           |                   |  |   |  |                  |  +--AS013_contigs_16s
+           |                   |  |   |  |               +--| (60)
+           |                   |  |   |  |               |  +--AS167_contigs_16s
+           |                   |  |   |  |            +--| (62)
+           |                   |  |   |  |            |  +--HN105_contigs_16s
+           |                   |  |   |  |         +--| (61)
+           |                   |  |   |  |         |  +--AS116_contigs_16s
+           |                   |  |   |  |     +---| (100)
+           |                   |  |   |  |     |   +--HN126_contigs_16s
+           |                   |  |   |  |  +--| (75)
+           |                   |  |   |  |  |  |                                                     +--AS234_contigs_16s
+           |                   |  |   |  |  |  |                                                  +--| (98)
+           |                   |  |   |  |  |  |                                                  |  +--USHLN263_contigs_16s
+           |                   |  |   |  |  |  |                                               +--| (81)
+           |                   |  |   |  |  |  |                                               |  +--USHLN165_contigs_16s
+           |                   |  |   |  |  |  |                                            +--| (58)
+           |                   |  |   |  |  |  |                                            |  |        +--AS142_contigs_16s
+           |                   |  |   |  |  |  |                                            |  |     +--| (80)
+           |                   |  |   |  |  |  |                                            |  |     |  +--USHLN198_contigs_16s
+           |                   |  |   |  |  |  |                                            |  |  +--| (97)
+           |                   |  |   |  |  |  |                                            |  |  |  +--USMM080_contigs_16s
+           |                   |  |   |  |  |  |                                            |  +--| (53)
+           |                   |  |   |  |  |  |                                            |     |  +--AS129_contigs_16s
+           |                   |  |   |  |  |  |                                            |     +--| (67)
+           |                   |  |   |  |  |  |                                            |        |  +--USHLN298_contigs_16s
+           |                   |  |   |  |  |  |                                            |        +--| (68)
+           |                   |  |   |  |  |  |                                            |           +--HN019_contigs_16s
+           |                   |  |   |  |  |  |                                         +--| (62)
+           |                   |  |   |  |  |  |                                         |  |  +--USHLN162_contigs_16s
+           |                   |  |   |  |  |  |                                         |  +--| (100)
+           |                   |  |   |  |  |  |                                         |     |  +--AS031_contigs_16s
+           |                   |  |   |  |  |  |                                         |     +--| (100)
+           |                   |  |   |  |  |  |                                         |        +--AS126_contigs_16s
+           |                   |  |   |  |  |  |                                      +--| (58)
+           |                   |  |   |  |  |  |                                      |  |  +--USHLN32_contigs_16s
+           |                   |  |   |  |  |  |                                      |  +--| (88)
+           |                   |  |   |  |  |  |                                      |     +--USHLN256_contigs_16s
+           |                   |  |   |  |  |  |                                   +--| (55)
+           |                   |  |   |  |  |  |                                   |  |     +--AS209_contigs_16s
+           |                   |  |   |  |  |  |                                   |  |  +--| (71)
+           |                   |  |   |  |  |  |                                   |  |  |  |  +--HN028_contigs_16s
+           |                   |  |   |  |  |  |                                   |  |  |  +--| (50)
+           |                   |  |   |  |  |  |                                   |  |  |     +--AS183_contigs_16s
+           |                   |  |   |  |  |  |                                   |  +--| (54)
+           |                   |  |   |  |  |  |                                   |     |  +--HN162_contigs_16s
+           |                   |  |   |  |  |  |                                   |     +--| (100)
+           |                   |  |   |  |  |  |                                   |        +--USHLN157_contigs_16s
+           |                   |  |   |  |  |  |                                +--| (47)
+           |                   |  |   |  |  |  |                                |  |  +--AS216_contigs_16s
+           |                   |  |   |  |  |  |                                |  +--| (100)
+           |                   |  |   |  |  |  |                                |     +--USHLN178_contigs_16s
+           |                   |  |   |  |  |  |                             +--| (49)
+           |                   |  |   |  |  |  |                             |  +--USMM078_contigs_16s
+           |                   |  |   |  |  |  |                          +--| (53)
+           |                   |  |   |  |  |  |                          |  |  +--M50_contigs_16s
+           |                   |  |   |  |  |  |                          |  +--| (50)
+           |                   |  |   |  |  |  |                          |     +--AS230_contigs_16s
+           |                   |  |   |  |  |  |                       +--| (59)
+           |                   |  |   |  |  |  |                       |  +--AS212_contigs_16s
+           |                   |  |   |  |  |  |                    +--| (47)
+           |                   |  |   |  |  |  |                    |  |  +--AS124_contigs_16s
+           |                   |  |   |  |  |  |                    |  +--| (25)
+           |                   |  |   |  |  |  |                    |     +--AS011_contigs_16s
+           |                   |  |   |  |  |  |                 +--| (45)
+           |                   |  |   |  |  |  |                 |  |     +--HN125_contigs_16s
+           |                   |  |   |  |  |  |                 |  |  +--| (37)
+           |                   |  |   |  |  |  |                 |  |  |  +--HN037_contigs_16s
+           |                   |  |   |  |  |  |                 |  +--| (67)
+           |                   |  |   |  |  |  |                 |     +--USHLN167_contigs_16s
+           |                   |  |   |  |  |  |              +--| (55)
+           |                   |  |   |  |  |  |              |  |        +--AS231_contigs_16s
+           |                   |  |   |  |  |  |              |  |     +--| (100)
+           |                   |  |   |  |  |  |              |  |     |  |  +--AS235_contigs_16s
+           |                   |  |   |  |  |  |              |  |     |  +--| (100)
+           |                   |  |   |  |  |  |              |  |     |     +--VD11_contigs_16s
+           |                   |  |   |  |  |  |              |  |  +--| (98)
+           |                   |  |   |  |  |  |              |  |  |  |  +--USHLN06_contigs_16s
+           |                   |  |   |  |  |  |              |  |  |  +--| (99)
+           |                   |  |   |  |  |  |              |  |  |     +--VD5_contigs_16s
+           |                   |  |   |  |  |  |              |  +--| (95)
+           |                   |  |   |  |  |  |              |     +--USMM130_contigs_16s
+           |                   |  |   |  |  |  |           +--| (78)
+           |                   |  |   |  |  |  |           |  +--USHLN005_contigs_16s
+           |                   |  |   |  |  |  |        +--| (60)
+           |                   |  |   |  |  |  |        |  |     +--HN079_contigs_16s
+           |                   |  |   |  |  |  |        |  |  +--| (95)
+           |                   |  |   |  |  |  |        |  |  |  |  +--HN166_contigs_16s
+           |                   |  |   |  |  |  |        |  |  |  +--| (92)
+           |                   |  |   |  |  |  |        |  |  |     +--USHLN010_contigs_16s
+           |                   |  |   |  |  |  |        |  +--| (92)
+           |                   |  |   |  |  |  |        |     +--HN151_contigs_16s
+           |                   |  |   |  |  |  |     +--| (94)
+           |                   |  |   |  |  |  |     |  +--HN039_contigs_16s
+           |                   |  |   |  |  |  +-----| (100)
+           |                   |  |   |  |  |        +--MMO-36_contigs_16s
+           |                   |  |   |  +--| (100)
+           |                   |  |   |     |     +--USMM045_contigs_16s
+           |                   |  |   |     |  +--| (98)
+           |                   |  |   |     |  |  +--VD15_contigs_16s
+           |                   |  |   |     +--| (100)
+           |                   |  |   |        +--USHLN015_contigs_16s
+           |                   |  +---| (100)
+           |                   |      |      +--MMO-164_contigs_16s
+           |                   |      |   +--| (99)
+           |                   |      |   |  +--USMM131_contigs_16s
+           |                   |      +---| (100)
+           |                   |          |  +--USHLN014_contigs_16s
+           |                   |          +--| (100)
+           |                   |             +--USHLN149_contigs_16s
+           +-------------------| (100)
+                               |              +--USMM236_contigs_16s
+                               |           +--| (100)
+                               |           |  |     +--USHLN150_contigs_16s
+                               |           |  |  +--| (100)
+                               |           |  |  |  +--USMM241_contigs_16s
+                               |           |  +--| (95)
+                               |           |     |  +--MMO-152_contigs_16s
+                               |           |     +--| (100)
+                               |           |        +--MMO-8_contigs_16s
+                               |     +-----| (100)
+                               |     |     |        +--USHLN155_contigs_16s
+                               |     |     |     +--| (100)
+                               |     |     |     |  +--USHLN208_contigs_16s
+                               |     |     |  +--| (94)
+                               |     |     |  |  |        +--USHLN234_contigs_16s
+                               |     |     |  |  |     +--| (92)
+                               |     |     |  |  |     |  +--USHLN218_contigs_16s
+                               |     |     |  |  |  +--| (100)
+                               |     |     |  |  |  |  |  +--MMO-141_contigs_16s
+                               |     |     |  |  |  |  +--| (100)
+                               |     |     |  |  |  |     +--MMO-160_contigs_16s
+                               |     |     |  |  +--| (100)
+                               |     |     |  |     |  +--USHLN217_contigs_16s
+                               |     |     |  |     +--| (100)
+                               |     |     |  |        +--USHLN215_contigs_16s
+                               |     |     +--| (100)
+                               |     |        |              +--MMO-56_contigs_16s
+                               |     |        |           +--| (100)
+                               |     |        |           |  +--MMO-64_contigs_16s
+                               |     |        |        +--| (71)
+                               |     |        |        |  |     +--USHLN272_contigs_16s
+                               |     |        |        |  |  +--| (98)
+                               |     |        |        |  |  |  +--LB16_contigs_16s
+                               |     |        |        |  +--| (98)
+                               |     |        |        |     +--MMO-113_contigs_16s
+                               |     |        |     +--| (64)
+                               |     |        |     |  +--MMO-35_contigs_16s
+                               |     |        |  +--| (100)
+                               |     |        |  |  +--USHLN186_contigs_16s
+                               |     |        +--| (100)
+                               |     |           |  +--USHLN213_contigs_16s
+                               |     |           +--| (98)
+                               |     |              |        +--VD1_contigs_16s
+                               |     |              |     +--| (80)
+                               |     |              |     |  +--USHLN154_contigs_16s
+                               |     |              |  +--| (80)
+                               |     |              |  |  +--USHLN153_contigs_16s
+                               |     |              +--| (100)
+                               |     |                 +--MMO-57_contigs_16s
+                               |  +--| (94)
+                               |  |  +--------------------16S_rRNA
+                               +--| (98)
+                                  |           +--USMM099_contigs_16s
+                                  |        +--| (71)
+                                  |        |  +--USHLN196_contigs_16s
+                                  |     +--| (100)
+                                  |     |  |  +--MMO-59_contigs_16s
+                                  |     |  +--| (46)
+                                  |     |     |  +--MMO-177_contigs_16s
+                                  |     |     +--| (98)
+                                  |     |        +--MMO-58_contigs_16s
+                                  +-----| (100)
+                                        |           +--USHLN273_contigs_16s
+                                        |        +--| (99)
+                                        |        |  +--USHLN028_contigs_16s
+                                        |     +--| (83)
+                                        |     |  |                    +--AS224_contigs_16s
+                                        |     |  |                 +--| (100)
+                                        |     |  |                 |  |        +--MMO-31_contigs_16s
+                                        |     |  |                 |  |     +--| (100)
+                                        |     |  |                 |  |     |  +--MMO-81_contigs_16s
+                                        |     |  |                 |  |  +--| (97)
+                                        |     |  |                 |  |  |  +--CR11_contigs_16s
+                                        |     |  |                 |  +--| (97)
+                                        |     |  |                 |     |  +--USHLN169_contigs_16s
+                                        |     |  |                 |     +--| (99)
+                                        |     |  |                 |        |     +--AS218_contigs_16s
+                                        |     |  |                 |        |  +--| (100)
+                                        |     |  |                 |        |  |  +--MMO-140_contigs_16s
+                                        |     |  |                 |        +--| (100)
+                                        |     |  |                 |           +--MMO-47_contigs_16s
+                                        |     |  |              +--| (40)
+                                        |     |  |              |  |     +--MMO-19_contigs_16s
+                                        |     |  |              |  |  +--| (100)
+                                        |     |  |              |  |  |  +--USMM125_contigs_16s
+                                        |     |  |              |  +--| (53)
+                                        |     |  |              |     |     +**USHLN181_contigs_16s
+                                        |     |  |              |     |  +--|
+                                        |     |  |              |     |  |  +**USMM074_contigs_16s
+                                        |     |  |              |     +--| (100)
+                                        |     |  |              |        +--USMM093_contigs_16s
+                                        |     |  |           +--| (49)
+                                        |     |  |           |  +--USHLN023_contigs_16s
+                                        |     |  |        +--| (59)
+                                        |     |  |        |  +--USHLN018_contigs_16s
+                                        |     |  |     +--| (59)
+                                        |     |  |     |  +--USMM117_contigs_16s
+                                        |     |  |  +--| (58)
+                                        |     |  |  |  +--MMO-108_contigs_16s
+                                        |     |  +--| (93)
+                                        |     |     |  +--S315_contigs_16s
+                                        |     |     +--| (94)
+                                        |     |        |  +--USHLN197_contigs_16s
+                                        |     |        +--| (100)
+                                        |     |           |  +--MMO-114_contigs_16s
+                                        |     |           +--| (91)
+                                        |     |              +--USHLN188_contigs_16s
+                                        |  +--| (98)
+                                        |  |  +--USHLN248_contigs_16s
+                                        +--| (99)
+                                           +--USHLN293_contigs_16s
+
+
+Consensus tree in newick format: 
+
+(MMO-142_contigs_16s:0.0024706266,MMO-68_contigs_16s:0.0000022046,(((USMM049_contigs_16s:0.0000022499,(((USHLN009_contigs_16s:0.0140817648,USHLN267_contigs_16s:0.0017662744)99:0.0039728263,MMO-17_contigs_16s:0.0063174209)100:0.0086715564,(MMO-72_contigs_16s:0.0000025172,USHLN227_contigs_16s:0.0055048674)100:0.0150537831)100:0.0505832155)73:0.0068442638,USMM094_contigs_16s:0.0048272533)100:0.1139712667,((((USHLN139_contigs_16s:0.0652966103,(HN128_contigs_16s:0.0030769489,(HN010_contigs_16s:0.0030761153,HN182_contigs_16s:0.0000025172)70:0.0000024595)100:0.0539264158)100:0.0504441201,(((((MMO-176_contigs_16s:0.0117904917,VD7_contigs_16s:0.0158704644)100:0.0877790058,USHLN278_contigs_16s:0.0389324131)71:0.0174528914,MMO-174_contigs_16s:0.0404066146)70:0.0206641043,(MMO-172_contigs_16s:0.0288063958,MMO-173_contigs_16s:0.0651872043)100:0.0271785738)80:0.0166571015,(USMM102_contigs_16s:0.0034753912,USMM111_contigs_16s:0.0081259681)100:0.0768753026)91:0.0524452953)100:0.0864479623,(((MMO-124_contigs_16s:0.0784198917,(MMO-42_contigs_16s:0.0709249192,VD34_contigs_16s:0.0443697269)93:0.0128361958)100:0.0774407871,(((((((((((HN121_contigs_16s:0.0077949408,((MMO-143_contigs_16s:0.0000025172,(HN059_contigs_16s:0.0000025172,MMO-163_contigs_16s:0.0000025172)62:0.0000025172)98:0.0007637183,AA010_contigs_16s:0.0000025172)99:0.0036285907)95:0.0083061979,USHLN143_contigs_16s:0.0058103376)54:0.0075058727,AS096_contigs_16s:0.0000025198)45:0.0000027586,HN020_contigs_16s:0.0070332456)40:0.0038704157,AS013_contigs_16s:0.0046895216)63:0.0062867675,AS167_contigs_16s:0.0000025172)60:0.0015629212,HN105_contigs_16s:0.0014936514)62:0.0063222022,AS116_contigs_16s:0.0030832364)61:0.0029502367,HN126_contigs_16s:0.0010105028)100:0.0714023434,(((((((((((((((((AS234_contigs_16s:0.0396750399,USHLN263_contigs_16s:0.0135151287)98:0.0139687583,USHLN165_contigs_16s:0.0077780540)81:0.0017777127,(((AS142_contigs_16s:0.0000025172,USHLN198_contigs_16s:0.0014082879)80:0.0000025172,USMM080_contigs_16s:0.0000025172)97:0.0027418127,(AS129_contigs_16s:0.0000025198,(USHLN298_contigs_16s:0.0000025172,HN019_contigs_16s:0.0102659173)68:0.0038386646)67:0.0018841024)53:0.0026956246)58:0.0029135231,(USHLN162_contigs_16s:0.0030483945,(AS031_contigs_16s:0.0033435715,AS126_contigs_16s:0.0028381748)100:0.0034493411)100:0.0079583238)62:0.0064082718,(USHLN32_contigs_16s:0.0000020283,USHLN256_contigs_16s:0.0059253386)88:0.0010810150)58:0.0010441653,((AS209_contigs_16s:0.0066141509,(HN028_contigs_16s:0.0000025198,AS183_contigs_16s:0.0014048126)50:0.0000025235)71:0.0046667091,(HN162_contigs_16s:0.0000025172,USHLN157_contigs_16s:0.0000025172)100:0.0032137962)54:0.0000021451)55:0.0031422097,(AS216_contigs_16s:0.0000025172,USHLN178_contigs_16s:0.0000025172)100:0.0029007257)47:0.0000025235,USMM078_contigs_16s:0.0028363861)49:0.0007815399,(M50_contigs_16s:0.0055156878,AS230_contigs_16s:0.0010854118)50:0.0015661603)53:0.0007497618,AS212_contigs_16s:0.0023707327)59:0.0027106682,(AS124_contigs_16s:0.0000025172,AS011_contigs_16s:0.0000025172)25:0.0000025172)47:0.0007155876,((HN125_contigs_16s:0.0000025172,HN037_contigs_16s:0.0000025172)37:0.0000025172,USHLN167_contigs_16s:0.0014179004)67:0.0000021037)45:0.0004933968,(((AS231_contigs_16s:0.0112302319,(AS235_contigs_16s:0.0067356598,VD11_contigs_16s:0.0027565243)100:0.0007777082)100:0.0024095386,(USHLN06_contigs_16s:0.0047506622,VD5_contigs_16s:0.0000025172)99:0.0019150467)98:0.0020289001,USMM130_contigs_16s:0.0062110047)95:0.0041540683)55:0.0043475926,USHLN005_contigs_16s:0.0024652263)78:0.0132062539,((HN079_contigs_16s:0.0046204487,(HN166_contigs_16s:0.0066423629,USHLN010_contigs_16s:0.0000021413)92:0.0063586368)95:0.0024678981,HN151_contigs_16s:0.0014283260)92:0.0043137101)60:0.0045694820,HN039_contigs_16s:0.0074812678)94:0.0167923083,MMO-36_contigs_16s:0.0320261855)100:0.0911897100)75:0.0072066872,((USMM045_contigs_16s:0.0189972276,VD15_contigs_16s:0.0010873416)98:0.0090223830,USHLN015_contigs_16s:0.0170505401)100:0.0496762327)100:0.0344399121)94:0.0280349379,((MMO-164_contigs_16s:0.0015458881,USMM131_contigs_16s:0.0000025172)99:0.0058012351,(USHLN014_contigs_16s:0.0115209873,USHLN149_contigs_16s:0.0038203540)100:0.0186805310)100:0.0682778415)100:0.0608677332)84:0.0128050884,((((USMM236_contigs_16s:0.0211251880,((USHLN150_contigs_16s:0.0061621565,USMM241_contigs_16s:0.0044538356)100:0.0224719516,(MMO-152_contigs_16s:0.0054714925,MMO-8_contigs_16s:0.0060320184)100:0.0305306024)95:0.0129520657)100:0.0327222445,(((USHLN155_contigs_16s:0.0147236290,USHLN208_contigs_16s:0.0184407920)100:0.0185952248,(((USHLN234_contigs_16s:0.0318106104,USHLN218_contigs_16s:0.0050081879)92:0.0065096310,(MMO-141_contigs_16s:0.0124035291,MMO-160_contigs_16s:0.0021616372)100:0.0221413433)100:0.0055029217,(USHLN217_contigs_16s:0.0233727473,USHLN215_contigs_16s:0.0057581975)100:0.0037243381)100:0.0241360738)94:0.0057388078,(((((MMO-56_contigs_16s:0.0016730475,MMO-64_contigs_16s:0.0022994759)100:0.0076249613,((USHLN272_contigs_16s:0.0021094736,LB16_contigs_16s:0.0057000551)98:0.0012405453,MMO-113_contigs_16s:0.0009524112)98:0.0018978010)71:0.0017011733,MMO-35_contigs_16s:0.0022923490)64:0.0000022367,USHLN186_contigs_16s:0.0063912340)100:0.0292943963,(USHLN213_contigs_16s:0.0081881038,(((VD1_contigs_16s:0.0114044379,USHLN154_contigs_16s:0.0065738452)80:0.0032338011,USHLN153_contigs_16s:0.0007943500)80:0.0058719427,MMO-57_contigs_16s:0.0000025235)100:0.0196330070)98:0.0089099417)100:0.0192684868)100:0.0229985323)100:0.0996403608,16S_rRNA:0.3261847760)94:0.0411349693,(((USMM099_contigs_16s:0.0000025235,USHLN196_contigs_16s:0.0070012209)71:0.0094312875,(MMO-59_contigs_16s:0.0494010115,(MMO-177_contigs_16s:0.0011014395,MMO-58_contigs_16s:0.0000025172)98:0.0242101937)46:0.0000023285)100:0.0402658388,((((USHLN273_contigs_16s:0.0221378303,USHLN028_contigs_16s:0.0191880497)99:0.0178352067,(((((((AS224_contigs_16s:0.0060112844,(((MMO-31_contigs_16s:0.0000025172,MMO-81_contigs_16s:0.0009054940)100:0.0037126745,CR11_contigs_16s:0.0030582527)97:0.0028531397,(USHLN169_contigs_16s:0.0040824237,((AS218_contigs_16s:0.0000025172,MMO-140_contigs_16s:0.0000025172)100:0.0024109021,MMO-47_contigs_16s:0.0015969361)100:0.0031253279)99:0.0024905980)97:0.0042832499)100:0.0453195383,((MMO-19_contigs_16s:0.0043674626,USMM125_contigs_16s:0.0090715270)100:0.0390310104,((USHLN181_contigs_16s:0.0000000000,USMM074_contigs_16s:0.0000000000):0.0000025172,USMM093_contigs_16s:0.0000025172)100:0.0179460349)53:0.0046236991)40:0.0044856358,USHLN023_contigs_16s:0.0072309278)49:0.0043675915,USHLN018_contigs_16s:0.0128075052)59:0.0049974822,USMM117_contigs_16s:0.0090994492)59:0.0032085699,MMO-108_contigs_16s:0.0166243375)58:0.0059304722,(S315_contigs_16s:0.0197956791,(USHLN197_contigs_16s:0.0009139666,(MMO-114_contigs_16s:0.0088207064,USHLN188_contigs_16s:0.0025012406)91:0.0045264257)100:0.0112820409)94:0.0060667782)93:0.0158132293)83:0.0033594170,USHLN248_contigs_16s:0.0289960166)98:0.0091575382,USHLN293_contigs_16s:0.0399789697)99:0.0250085752)100:0.0966960192)98:0.0590511713)100:0.3034138942)100:0.1638786257);
+
+TIME STAMP
+----------
+
+Date and time: Thu Apr 27 14:04:20 2023
+Total CPU time used: 3433.810435 seconds (0h:57m:13s)
+Total wall-clock time used: 236.4899601 seconds (0h:3m:56s)
+

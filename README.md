@@ -13,6 +13,11 @@ Create a new project in RStudio. To run the scripts in 01_GenomeQC to recreate F
 * Open `checkM_analysis.R` in the files panel window.
 * `cmd enter` to run each step
 
+## Recreate the Manuscript Figures
+Once the repository has been cloned (above), recreate each figure as follows: 
+**Fig 1 Origin of bacterial isolates in MosAIC**
+* Script: `04_Sankey_Diagram/Metadata_Snakey_Diagram.R`: run code from line `1` to `127`
+
 ## Authors 
 * Aidan Foo - aidanfoo96@gmail.com
 * Laura Brettell - L.E.Brettell1@salford.ac.uk

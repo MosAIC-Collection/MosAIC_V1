@@ -9,9 +9,10 @@ Scripts for each analysis are written in R. Each directory contains necessary fi
 
 **Example**
 Create a new project in RStudio. To run the scripts in 01_GenomeQC to recreate Figure 1B in the manuscript. 
-* Within terminal `git clone https://github.com/MosAIC-Collection/MosAIC_V1`
-* Open `checkM_analysis.R` in the files panel window.
-* `cmd enter` to run each step
+* Navigate to the terminal window and `git clone https://github.com/MosAIC-Collection/MosAIC_V1`.
+* Open open the script `checkM_analysis.R` from the files panel window.
+* Install required packages. 
+* `cmd enter` from line `1`.
 
 ## Recreate the Manuscript Figures
 Once the repository has been cloned (above), recreate each figure as follows: 

@@ -41,6 +41,21 @@ Once the repository has been cloned (above), recreate each figure as follows:
 * Fig 5B - Script: `07a_SerratiaPangenome/SerratiaMPangenome.R`: run code from line `1` to `210`
 * Fig 5C - Script: `07c_ElizabethkingiaPangenome/Elizabethkingia_Anophelis_Pangenome.R`: run code from line `1` to `177`
 
+#### Supplementary Figures 
+* Fig S1 - Script: `01_Genome_QC/plot_QUAST.R`: run code from line `1` to `55`
+* Fig S2 - Script: `01_Genome_QC/checkM_analysis.R`: run code from line `1` to `184`
+* Fig S3 - Script: `02_GTDB_Drep_Summary.R`: run code from line `1` to `188`
+* Fig S4 - Script: `12_Metadata_Exploration.R`: run code from line `1` to `148`
+* Fig S5 - Script: `12_Metadata_Exploration.R`: run code from line `1` to `255`
+* Fig S6 - Script: `05_Virulence_Factor_Analysis.R`: run code from line `1` to `340`
+* Fig S7 - Script: `06a_SerratiaPopulationStructure.R`: run code from line `1` to `103`
+* Fig S8 - Script: `06b_EnterobacterPopulationStructure.R`: run code from line `1` to `154`
+* Fig S9 - Script: `06c_ElizabethkingiaPopulationStructure.R`: run code from line `1` to `105`
+* Fig S10 - Script: `08_GeneAccumulationCurves.R`: run code from line `1` to `42`
+* Fig S11-13 - Script: `10_VisPopPUNKClusters.R`: run code from line `1` to `67`
+* Fig S14 - Script: `11_LineageCoreGeneAnalysis.R`: run code from line `1` to `167`
+* Fig S15 - Script: `11_LineageCoreGeneAnalysis.R`: run code from line `1` to `293`
+ 
 ## Authors 
 * Aidan Foo - aidanfoo96@gmail.com
 * Laura Brettell - L.E.Brettell1@salford.ac.uk

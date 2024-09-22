@@ -16,6 +16,7 @@ Eliz_cols <- c("Elizabethkingia anophelis" = "#4e79a7",
                "Insect"="#67717F",
                "Missing"="white",
                "Mosquito"="black",
+               'Larval water' = "#0F5DA7",
                "Plant"="#BAD24E",
                "Hu"="#EAD4FB",
                "Curated"="#667B8C",
@@ -67,7 +68,7 @@ Eliz_pangenome_classfication_lineage %>%
   print(n = 400)
 
 # Read in Enterobacter asrbuiae metadata - clean + filter for isolation source 
-Eliz_metadata <- read_tsv("MosAIC_V1/07c_ElizabethkingiaPangenome/Elizabethkingiaanophelis_metadata.tsv") %>%
+Eliz_metadata <- read_tsv("MosAIC_V1/07c_ElizabethkingiaPangenome/Elizabethkingiaanophelis_metadata2.txt") %>%
   select(File_prefix, Collection, host_simple, Species)
 
 Eliz_metadata$File_prefix <- substring(Eliz_metadata$File_prefix, 1, 15)

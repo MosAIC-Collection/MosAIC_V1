@@ -39,6 +39,7 @@ Eliz_cols <- c("Elizabethkingia anophelis" = "#4e79a7",
                "Insect"="#67717F",
                "Missing"="white",
                "Mosquito"="black",
+               'Larval water' = "#0F5DA7",
                "Plant"="#BAD24E",
                "Hu"="#EAD4FB",
                "Curated"="#667B8C",
@@ -77,13 +78,13 @@ MosAIC_cols <- c("female_mosquito" = "#4e79a7",
                  "UW Madison" = "#F781BF")
 # Make Initial Tree
 Eliz_Tree <- ggtree(Rooted_Elizabethkingia, layout="circular", size=0.2, right = T, ladderize = T, open.angle = 90) + 
-  layout_fan(angle = 90) + geom_tiplab(size = 0.5)
+  layout_fan(angle = 90) #+ geom_tiplab(size = 0.5)
 
 # Save tree with tip labels - use this to root the tree without the Chrysoebacterium outgroup 
 ggsave(filename = "ElizabethkingiaModel/280823_ElizabethkingiaModel_tree.pdf")
 
 # Read Metadata
-Elizabethkingia_metadata <- read_tsv("MosAIC_V1/06c_ElizabethkingiaPopulationStructure/Elizabethkingiaanophelis_metadata.tsv")
+Elizabethkingia_metadata <- read_tsv("MosAIC_V1/06c_ElizabethkingiaPopulationStructure/Elizabethkingiaanophelis_metadata2.txt")
 
 # Fix File Extensions
 Elizabethkingia_metadata$File_prefix <- gsub("\\.", "_", Elizabethkingia_metadata$File_prefix)
@@ -191,7 +192,7 @@ Eliz6 <- gheatmap(Eliz5, E_Host, color = NULL,
 #ggsave(Eliz6, filename = "ElizabethkingiaModel/030523_ElizabethkingiaPopStructure_Collection_Legend.pdf", height = 10, width = 10)
 
 # Read in Elizabethkingia anophelis metadata - clean + filter for isolation source 
-Eliz_metadata <- read_tsv("MosAIC_V1/06c_ElizabethkingiaPopulationStructure/Elizabethkingiaanophelis_metadata.tsv") %>%
+Eliz_metadata <- read_tsv("MosAIC_V1/06c_ElizabethkingiaPopulationStructure/Elizabethkingiaanophelis_metadata2.txt") %>%
   clean_names() 
 
 Eliz_metadata$file_prefix <- gsub("\\.", "_", Eliz_metadata$file_prefix)
@@ -212,15 +213,16 @@ Eliz_metadata_edit2 <- as.data.frame(Eliz_metadata %>%
                                        mutate(source_lab_simple = if_else(source_lab_simple == "Povelones_Michael", "2", source_lab_simple)) %>%
                                        mutate(source_lab_simple = if_else(source_lab_simple == "ValienteMoro_Claire", "3", source_lab_simple)) %>%
                                        mutate(source_lab_simple = if_else(source_lab_simple == "UW_Capstone_Students", "4", source_lab_simple)) %>%
-                                       mutate(source_lab_simple = if_else(source_lab_simple == "Caragata_Eric", "5", source_lab_simple)) %>%
-                                       mutate(source_lab_simple = if_else(source_lab_simple == "Caragata, Eric", "5", source_lab_simple)) %>%
-                                       mutate(source_lab_simple = if_else(source_lab_simple == "Brackney_Doug", "6", source_lab_simple)) %>%
+                                       mutate(source_lab_simple = if_else(source_lab_simple == "Caragata_Eric", "6", source_lab_simple)) %>%
+                                       mutate(source_lab_simple = if_else(source_lab_simple == "Caragata, Eric", "6", source_lab_simple)) %>%
+                                       mutate(source_lab_simple = if_else(source_lab_simple == "Brackney_Doug", "5", source_lab_simple)) %>%
                                        mutate(source_lab_simple = if_else(source_lab_simple == "Chen;S. and Walker;E.", "7", source_lab_simple)) %>%
                                        mutate(source_lab_simple = if_else(source_lab_simple == "Jacobs-Lorena_Marcelo", "8", source_lab_simple)) %>%
                                        mutate(source_lab_simple = if_else(source_lab_simple == "Wang, S", "9", source_lab_simple)) %>%
                                        mutate(source_lab_simple = if_else(source_lab_simple == "Pei D", "10", source_lab_simple)))
 
 Eliz_subset <- tree_subset(Rooted_Elizabethkingia, "MMO-105", levels_back = 6)
+
 Eliz_subset_1 <- Eliz_subset %>%
   ggtree(size = 0.2, layout = "fan", open.angle = 185)
 

@@ -43,6 +43,7 @@ Chavda_cols <- c("Citrobacter braakii" = "#4e79a7",
                  "Insect"="#67717F",
                  "Missing"="white",
                  "Mosquito"="#F781BF",
+                 'Larval water' = "#0F5DA7", 
                  "Plant"="#BAD24E",
                  "Chavda"="#91B98B",
                  "Curated"="#667B8C",
@@ -151,8 +152,7 @@ Host <- ExtractMetdata(chavda_meta_paper, "Host")
 Collection <- ExtractMetdata(chavda_meta_paper, "Collection")
 
 # Make the Tree 
-Enterobacter_Tree <- ggtree(EA_tree_root, layout =  "fan", size = 0.1)#+ geom_tiplab(size = 0.7) #+ 
-#layout_fan(angle = 90) 
+Enterobacter_Tree <- ggtree(EA_tree_root, layout =  "fan", size = 0.1) + layout_fan(angle = 90) #+ geom_tiplab(size = 0.7) 
 
 ggsave(plot = Enterobacter_Tree, filename = "EnterobacterModel/PlotsFinal/070923_Chavda_Mos_PopulationStructure_Tip.pdf", height = 10, width = 8)
 

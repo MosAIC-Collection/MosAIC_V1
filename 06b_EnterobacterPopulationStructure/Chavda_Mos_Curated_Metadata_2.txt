@@ -453,32 +453,32 @@ NZ_CP017186	GCF_001729745.1	E. cloacae complex 'Hoffmann cluster III'	E. cloacae
 NZ_CP017181	GCF_001729765.1	E. kobei	E. kobei	NA	NonMosquito	Missing	Chavda	NA	NA	NA	NA	NA	NA	NA	NA	NA
 NZ_CP017183	GCF_001729785.1	E. xiangfangensis	E. xiangfangensis	NA	NonMosquito	Missing	Chavda	NA	NA	NA	NA	NA	NA	NA	NA	NA
 NZ_CP017184	GCF_001729805.1	Enterobacter roggenkampii	Enterobacter roggenkampii	NA	NonMosquito	Missing	Chavda	NA	NA	NA	NA	NA	NA	NA	NA	NA
-AS091	AS091	Enterobacter hormaechei_A	E. hormaechei subsp. hormaechei	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	"Cook_County,IL,USA;North_America"	field	NA
-AS124	AS124	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+AS091	AS091	Enterobacter hormaechei_A	E. hormaechei subsp. hormaechei	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	"Cook_County,IL,USA;North_America"	field	NA
+AS124	AS124	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
 HN007	HN007	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	Coon_Kerri	UW-Madison	lab	Aedes_aegypti
-HN049	HN049	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
-HN065	HN065	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
-HN069	HN069	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
-HN073	HN073	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN049	HN049	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN065	HN065	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN069	HN069	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN073	HN073	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
 HN120	HN120	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	mosquito_eggs	Coon_Kerri	Univ_Georgia	lab	Aedes_aegypti
 HN124	HN124	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	mosquito_larvae	Coon_Kerri	Univ_Georgia	lab	Aedes_atropalpus
 HN125	HN125	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	mosquito_larvae	Coon_Kerri	Univ_Georgia	lab	Aedes_atropalpus
-HN087	HN087	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
-HN091	HN091	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
-HN100	HN100	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN087	HN087	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN091	HN091	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN100	HN100	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
 HN109	HN109	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	Coon_Kerri	UW-Madison	lab	Aedes_aegypti
 HN110	HN110	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	Coon_Kerri	UW-Madison	lab	Aedes_aegypti
-HN176	HN176	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
+HN176	HN176	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	Coon_Kerri	UW-Madison	lab	NA
 USHLN167	USHLN167	Enterobacter mori	E. mori	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	male_mosquito	ValienteMoro_Claire	"Ankazobe,MD;Africa"	field	Aedes_albopictus
 USHLN177	USHLN177	Enterobacter asburiae	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	ValienteMoro_Claire	"Tamatave,MD;Africa"	field	Aedes_albopictus
 USHLN179	USHLN179	Enterobacter asburiae	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	male_mosquito	ValienteMoro_Claire	"Tamatave,MD;Africa"	field	Aedes_albopictus
 USHLN184	USHLN184	Enterobacter asburiae	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	male_mosquito	ValienteMoro_Claire	"Tamatave,MD;Africa"	field	Aedes_albopictus
 USHLN270	USHLN270	Enterobacter hormaechei_A	E. hormaechei subsp. hormaechei	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	Lampe_Dave	"Harrisburg,PA,USA;North_America"	field	Anopheles_quadrimaculatus
 AS212	AS212	Enterobacter hormaechei_A	E. hormaechei subsp. hormaechei	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	stable_fly_adult	Coon_Kerri	"Arlington,WI,USA;North_America"	field	NA
-MMO-37	MMO-37	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
-MMO-38	MMO-38	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
-MMO-43	MMO-43	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
-MMO-45	MMO-45	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
+MMO-37	MMO-37	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
+MMO-38	MMO-38	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
+MMO-43	MMO-43	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
+MMO-45	MMO-45	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
 MMO-83	MMO-83	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	UW_Capstone_Students	UW-Madison	lab	Aedes_aegypti
 MMO-84	MMO-84	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	UW_Capstone_Students	UW-Madison	lab	Aedes_aegypti
 MMO-88	MMO-88	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	UW_Capstone_Students	UW-Madison	lab	Aedes_aegypti
@@ -490,7 +490,7 @@ MMO-116	MMO-116	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	M
 MMO-119	MMO-119	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	UW_Capstone_Students	UW-Madison	lab	Aedes_aegypti
 MMO-120	MMO-120	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	UW_Capstone_Students	UW-Madison	lab	Aedes_aegypti
 MMO-122	MMO-122	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	UW_Capstone_Students	UW-Madison	lab	Aedes_aegypti
-MMO-126	MMO-126	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
+MMO-126	MMO-126	Enterobacter roggenkampii	E. roggenkampii	Mosquito	Mosquito	Larval water	MosAIC	NA	NA	NA	NA	larval_water	UW_Capstone_Students	UW-Madison	lab	NA
 USMM051	USMM051	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	Povelones_Michael	Univ_Pennsylvania	lab	Anopheles_gambiae
 USMM053	USMM053	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	Povelones_Michael	Univ_Pennsylvania	lab	Anopheles_gambiae
 USMM054	USMM054	Enterobacter asburiae_B	E. asburiae	Mosquito	Mosquito	Mosquito	MosAIC	NA	NA	NA	NA	female_mosquito	Povelones_Michael	Univ_Pennsylvania	lab	Anopheles_gambiae

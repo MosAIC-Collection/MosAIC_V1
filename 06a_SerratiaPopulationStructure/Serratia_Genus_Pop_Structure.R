@@ -11,9 +11,10 @@ library(phytools)
 library(tidyverse)
 library(ggnewscale)
 library(janitor)
+library(ggstar)
 
 # Read Tree
-Serratia_pop <- read.tree("SerratiaModel/280323_core_gene_alignment_SNP_filt.aln.contree")
+Serratia_pop <- read.tree("MosAIC_V1/06a_SerratiaPopulationStructure/280323_core_gene_alignment_SNP_filt.aln.contree")
 
 # Root Tree
 rooted_serratia_tree <- phytools::midpoint.root(Serratia_pop)
@@ -87,24 +88,51 @@ cols <- c("Serratia entomophila" = "#4e79a7",
           "adults" = "#D23E5F", 
           "eggs" = "#AD9A9F")
 
+# MosAIC colours
+MosAIC_cols <- c("female_mosquito" = "#4e79a7",
+                 "male_mosquito" = "#f28e2b",
+                 "larval_water" = "#e15759",
+                 "mosquito" = "#C3D673",
+                 "mosquito_egg" = "#76b7b2",
+                 "stable fly" = "#394B18",
+                 "water" = "#336220",
+                 "Coon" = "#edc948", 
+                 "Hughes/Heinz" = "#297A31",
+                 "Lampe, David" = "#32915E",
+                 "Povelones, Michael" = "#1BC200",
+                 "Valiente Moro, Claire" = "#1FA918",
+                 "field" = "#344FAA",
+                 "Ankazobe, Madagascar" = "#2760AA",
+                 "E. hormaechei subsp. hoffmannii" = "#1B77A9",
+                 "E. hormaechei subsp. oharae" =  "#1191A7",
+                 "E. hormaechei subsp. steigerwaltii" = "#07A49A",
+                 "lab" = "#913431",
+                 "field" = "Black", 
+                 "lab" = "grey",
+                 "Arlington, WI" = "#90318C",
+                 "Cook Co, IL" = "#827A87",
+                 "LSTM" = "#76b7b2",
+                 "Tamatave, Madagascar" = "#B88694",
+                 "UGA" = "black",
+                 "UW Madison" = "white", 
+                 "UW Madison" = "#F781BF")
 # Initial Tree Drawing
-S1 <- ggtree(rooted_serratia_tree, layout="fan", size=0.1, right = T, ladderize = T, open.angle = 90) #+ geom_tiplab(size = 0.8)
+S1 <- ggtree(rooted_serratia_tree, layout="circular", size=0.2, right = T, ladderize = T) + 
+  layout_fan(angle = 90)
 
-ggsave(S1, filename = "SerratiaModel/GenusPop/070923_InitialTree.pdf", height = 20, width = 20) #height = 40)
+ggsave(S1, filename = "SerratiaModel/GenusPop/130423_InitialTree.pdf", height = 40)
 
 # Read Metadata
-serratia_metadata <- read_tsv("Serratia_Curated_Metadata_2.txt")
+serratia_metadata <- read_tsv("MosAIC_V1/06a_SerratiaPopulationStructure/Serratia_Curated_Metadata_2.txt")
 
 # Edit Metadata to fit with ggtree
 serratia_metadata_edit <- serratia_metadata %>%
-  select(File_prefix,Host, host_simple, Country, Collection.Date, 
-         Species, Short.species, Collection, MosAIC_source_specific, 
-         MosAIC_source_lab, MosAIC_lab_field, Mosquito_spp, 
-         host_species_non_mosquito, life_stage_non_mosquito, sex_non_mosquito, 
-         tissue_non_mosquito, mosquito_species, mosquito_strain_lab, 
-         mosquito_life_stage, mosquito_sex, mosquito_female_feeding_status, mosquito_tissue) %>%
+  select(File_prefix,Short.species, Species, Paper,Generic_host,Country, Mosquito, Collection, host_simple) %>%
   rename(`Labelled species` = Short.species, 
-         Classification = "Species") 
+         Dataset = Paper, Source = Generic_host, 
+         `MOSaic Collection` = Mosquito, 
+         Classification = "Species", 
+         Host = "host_simple") %>%
   mutate(GTDB_Classification = NA, 
          NCBI_Classification = NA) %>%
   mutate(GTDB_Classification = if_else(Collection == "MosAIC", Classification, GTDB_Classification)) %>%
@@ -124,7 +152,7 @@ ExtractMetdata <- function(data, col){
 GTDB_Classification <- ExtractMetdata(serratia_metadata_edit, "GTDB_Classification")
 NCBI_Classification <- ExtractMetdata(serratia_metadata_edit, "NCBI_Classification")
 Collection <- ExtractMetdata(serratia_metadata_edit, "Collection")
-Host <- ExtractMetdata(serratia_metadata_edit, "host_simple")
+Host <- ExtractMetdata(serratia_metadata_edit, "Host")
 
 # Make Trees with Appended Metadata
 S2 <- S1 %>% ggtree::gheatmap(NCBI_Classification, color = NULL,
@@ -196,7 +224,7 @@ ggsave(filename = "SerratiaModel/PlotsFinal/Figure_3_Williamns_MosAIC_Population
 
 # MAKE SUBSETS
 # Read in Serratia marscecens metadata - clean + filter for isolation source 
-S_metadata <- read_tsv("Serratia_Curated_Metadata_2.txt") %>%
+S_metadata <- read_tsv("MosAIC_V1/06a_SerratiaPopulationStructure/Serratia_Curated_Metadata_2.txt") %>%
   clean_names() 
 
 # Substitute all "." with "_"  
@@ -212,7 +240,7 @@ S_metadata_edit2 <- as.data.frame(S_metadata %>%
                                     rename(ID = "file_prefix") %>%
                                     mutate(host = 1) %>%
                                     mutate(lab_field_derived_simple = if_else(mos_aic_lab_field == "lab", "L", mos_aic_lab_field)) %>%
-                                    mutate(lab_field_derived_simple = if_else(mos_aic_lab_field == "field", "F", mos_aic_lab_field)) %>%
+                                    mutate(lab_field_derived_simple = if_else(lab_field_derived_simple == "field", "F", lab_field_derived_simple)) %>%
                                     mutate(source_lab_simple = if_else(mos_aic_source_lab == "Coon_Kerri", "1", mos_aic_source_lab)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "Povelones_Michael", "2", source_lab_simple)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "ValienteMoro_Claire", "3", source_lab_simple)) %>%
@@ -230,13 +258,13 @@ SM_subset_1 <- SM_subset %>%
   ggtree(size = 0.2, layout = "fan", open.angle = 185) 
 
 SM_subset_2 <- SM_subset_1 %>% gheatmap(Host, colnames_offset_y = 20,
-                                           colnames_angle = 60,
-                                           hjust = 0.15,
-                                           colnames_position = "top",
-                                           colnames = T,
-                                           width = 0.05,
-                                           offset = 0.0, 
-                                           font.size = 5) + 
+                                        colnames_angle = 60,
+                                        hjust = 0.15,
+                                        colnames_position = "top",
+                                        colnames = T,
+                                        width = 0.05,
+                                        offset = 0.0, 
+                                        font.size = 5) + 
   scale_fill_manual(values = c(cols)) + 
   guides(fill = guide_legend(ncol = 2, title = "Source")) 
 
@@ -258,7 +286,7 @@ SM_subset_3 <- SM_subset_2 + geom_fruit(
                        order=1), 
                      na.translate=FALSE) + 
   new_scale_fill() 
-  
+
 
 SM_subset_4 <- SM_subset_3 + ggtreeExtra::geom_fruit(
   data = S_metadata_edit2, 
@@ -304,11 +332,11 @@ SM_subset_5 <- SM_subset_4 + geom_fruit(
                                     "Jacobs-Lorena_Marcelo" = "rhombus", "Wang, S" = "left-triangle1", "field" = "hexagonal star")) + 
   new_scale_fill()
 
-ggsave(SM_subset_5, filename = "SerratiaModel/PlotsFinal/020724_SM_Subset_SourceMetadata_LabelAdjust.pdf", height = 5, width = 10)
-
+ggsave(SM_subset_5, filename = "SerratiaModel/PlotsFinal/030523_SM_Subset_SourceMetadata.pdf", height = 5, width = 10)
 
 # Second subset but for Serratia fonticola clades
 SF_Subset <- tree_subset(rooted_serratia_tree, "HN157_contigs.fa", levels_back = 5)
+
 SF_Subset_tree <- SF_Subset %>%
   ggtree(size = 0.2, layout = "fan", open.angle = 185) 
 
@@ -332,7 +360,7 @@ SF_Subset_2 <- SF_Subset_1 + geom_fruit(
   offset = 0,
   grid.params=list(
     linetype=3,
-    size=0.2
+    size=0.3
   )) + 
   scale_color_manual(values = cols, 
                      name = "Mosquito Isolation Specific",
@@ -345,8 +373,6 @@ SF_Subset_2 <- SF_Subset_1 + geom_fruit(
 
 SF_Subset_3 <- SF_Subset_2 + geom_fruit(
   data = S_metadata_edit2, 
-  #geom = geom_star, 
-  #mapping = aes(x = host, y = ID, starshape=source_lab),
   geom = geom_text,
   size = 2.5, 
   angle = 5,
@@ -354,7 +380,7 @@ SF_Subset_3 <- SF_Subset_2 + geom_fruit(
   offset = -0.1, 
   grid.params=list(
     linetype=3,
-    size=0.2
+    size=0.5
   )
 ) + 
   scale_fill_manual(values = MosAIC_cols,
@@ -369,121 +395,21 @@ SF_Subset_3 <- SF_Subset_2 + geom_fruit(
 
 SF_Subset_4 <- SF_Subset_3 + geom_fruit(
   data = S_metadata_edit2, 
-  #geom = geom_star, 
-  #mapping = aes(x = host, y = ID, starshape=lab_field_derived),
-  geom_text(),
+  geom = geom_text, 
   size = 2.5, 
   angle = 5,
   mapping = aes(x = host, y = ID, label = lab_field_derived_simple),
   offset = -0.1, 
   grid.params=list(
     linetype=3,
-    size=0.2
+    size=0.5
   )
 ) + 
   scale_fill_manual(values = cols) + 
-  scale_starshape_manual(values = c("Coon_Kerri" = "square diamond", "lab" = "circle", "Pei D" = "plus filled", 
-                                    "field" = "hexagonal star")) + 
+  scale_starshape_manual(values = c("Coon" = "square diamond", "lab" = "circle", "Pei D" = "plus filled")) + 
   new_scale_fill()
 
-ggsave(SF_Subset_4, filename = "SerratiaModel/PlotsFinal/020724_SF_Subset_SourceMetadata_LabelAdjust.pdf", height = 5, width = 10)
-
-#### Extract more Metadata
-
-ExtractMetdata <- function(data, col){
-  table2 <- data %>%
-    dplyr::select(File_prefix, !!col) %>%
-    distinct(File_prefix, .keep_all = T) %>%
-    filter(!is.na(File_prefix)) %>%
-    tibble::column_to_rownames(var = "File_prefix")
-} 
-
-sample_source <- ExtractMetdata(serratia_metadata_edit, "sample_source")
-sample_location <- ExtractMetdata(serratia_metadata_edit, "sample_location")
-mosquito_life_stage <- ExtractMetdata(serratia_metadata_edit, "mosquito_life_stage")
-isolation_date <- ExtractMetdata(serratia_metadata_edit, "isolation_date")
-
-Serratia_tree2 <- SM_tree_root %>%
-  ggtree(size = 0.2, layout = "rectangular") 
-
-Serratia_tree2_1 <- Serratia_tree2 %>% gheatmap(sample_source, colnames_offset_y = 20,
-                                                        colnames_angle = 60,
-                                                        hjust = 0.15,
-                                                        colnames_position = "top",
-                                                        colnames = T,
-                                                        width = 0.05,
-                                                        offset = 0.0, 
-                                                        font.size = 5) + 
-  scale_fill_manual(values = cols, na.value = "white") + 
-  guides(fill = guide_legend(ncol = 2, title = "sample_source")) + 
-  new_scale_fill()
-
-Enterobacter_tree2_2 <- Enterobacter_tree2_1 %>% gheatmap(sample_location, colnames_offset_y = 20,
-                                                          colnames_angle = 60,
-                                                          hjust = 0.15,
-                                                          colnames_position = "top",
-                                                          colnames = T,
-                                                          width = 0.05,
-                                                          offset = 0.04, 
-                                                          font.size = 5) + 
-  scale_fill_manual(values = c(Chavda_cols), na.value = "white") + 
-  guides(fill = guide_legend(ncol = 2, title = "sample_source")) + 
-  new_scale_fill()
-
-Enterobacter_tree2_3 <- Enterobacter_tree2_2 %>% gheatmap(mosquito_life_stage, colnames_offset_y = 20,
-                                                          colnames_angle = 60,
-                                                          hjust = 0.15,
-                                                          colnames_position = "top",
-                                                          colnames = T,
-                                                          width = 0.05,
-                                                          offset = 0.08, 
-                                                          font.size = 5) + 
-  scale_fill_manual(values = c(Chavda_cols), na.value = "white") + 
-  guides(fill = guide_legend(ncol = 2, title = "sample_source")) + 
-  new_scale_fill()
-
-
-
-Enterobacter_tree2_2 <- Enterobacter_tree2_1 + geom_fruit(
-  data = E_metadata_edit2, 
-  geom = geom_point, 
-  mapping = aes(x = host, y = ID, col=mosquito_species),
-  offset = 0,
-  grid.params=list(
-    linetype=3,
-    size=0.5
-  )) + scale_color_manual(values = Chavda_cols,
-                          name = "Mosquito Isolation Specific",
-                          guide=guide_legend(
-                            keywidth=0.3, 
-                            keyheight=0.3, 
-                            order=1
-                          ),
-                          na.translate=FALSE) + 
-  new_scale_fill() 
-
-Enterobacter_tree2_3 <- Enterobacter_tree2_2 + geom_fruit(
-  data = E_metadata_edit2, 
-  geom = geom_star, 
-  mapping = aes(x = host, y = ID, starshape=source_lab),
-  offset = -0.1, 
-  grid.params=list(
-    linetype=3,
-    size=0.5
-  )
-) + 
-  scale_fill_manual(values = Chavda_cols,
-                    name = "Source Lab",
-                    guide=guide_legend(
-                      keywidth=0.3, 
-                      keyheight=0.3, 
-                      order=3
-                    ),
-                    na.translate=FALSE) + 
-  new_scale_fill()
-
-ggsave("EnterobacterModel/PlotsFinal/290823_Enterobacter_Supp_Metadata_Phylogeny.pdf")
-
+ggsave(SF_Subset_4, filename = "SerratiaModel/PlotsFinal/030523_SF_Subset_SourceMetadata.pdf", height = 5, width = 10)
 
 # Clades corresponding to Serratia marscecens
 #Serratia_marscecens_clade <- viewClade(p, MRCA(p, "GCA_001902635.1_ASM190263v1_genomic", "GCA_001539745.1_12082_2_93_genomic"))

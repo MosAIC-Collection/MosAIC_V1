@@ -11,13 +11,13 @@ library(janitor)
 library(ggstar)
 
 # Read in the Enterobacter Tree 
-enterobacter_tree <- ape::read.tree("EnterobacterModel/EnterobacterAsburiae/050423_core_gene_alignment_snp_tree.treefile")
+enterobacter_tree <- ape::read.tree("MosAIC_V1/07b_EnterobacterPangenome/050423_core_gene_alignment_snp_tree.treefile")
 
 # Root - rooting at the split defined by the genera tree
 enterobacter_tree_root <- phytools::midpoint.root(enterobacter_tree)
 
 # Read Panaroo Gene Presence Absence File
-E_panaroo_data <- read.table("EnterobacterModel/EnterobacterAsburiae/090423_gene_presence_absence_clean.Rtab", 
+E_panaroo_data <- read.table("MosAIC_V1/07b_EnterobacterPangenome/090423_gene_presence_absence_clean.Rtab", 
                            header = T,
                            sep="\t",
                            quote = "",
@@ -26,7 +26,7 @@ E_panaroo_data <- read.table("EnterobacterModel/EnterobacterAsburiae/090423_gene
                            check.names = F)
 
 # Read the Twilight Gene Classification 
-E_pop_class <- read_tsv("EnterobacterModel/EnterobacterAsburiae/output_classification_table.tab") %>%
+E_pop_class <- read_tsv("MosAIC_V1/07b_EnterobacterPangenome/output_classification_table.tab") %>%
   rename("Gene" = gene_name) %>%
   select(Gene, specific_class)
 
@@ -38,7 +38,7 @@ E_pangenome_w_classification <- E_panaroo_data %>%
 #pangenome_w_classification[["strain"]] <- gsub("\\.", "_", pangenome_w_classification[["strain"]])
 
 # Read in PopPUNK Lineage Clusters 
-E_lineage_data <- read_tsv("EnterobacterModel/EnterobacterAsburiae/090423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
+E_lineage_data <- read_tsv("MosAIC_V1/07b_EnterobacterPangenome/090423_PopPUNK_clusters_refine_clean.tsv") #col_names = c("Sample", "Cluster"))  
 
 # Convert the Cluster column from dbl to fct
 E_lineage_data$Cluster <- as.factor(E_lineage_data$Cluster)
@@ -48,7 +48,7 @@ E_pangenome_classfication_lineage <- E_pangenome_w_classification %>%
   left_join(E_lineage_data, by = c("strain" =  "Sample"))
 
 # Read in Enterobacter asrbuiae metadata - clean + filter for isolation source 
-E_metadata <- read_tsv("EnterobacterModel/110423_Chavda_Mos_Curated_Metadata.tsv") %>%
+E_metadata <- read_tsv("MosAIC_V1/07b_EnterobacterPangenome/Chavda_Mos_Curated_Metadata_2.txt") %>%
   clean_names() 
 
 # Substitute all "." with "_"  

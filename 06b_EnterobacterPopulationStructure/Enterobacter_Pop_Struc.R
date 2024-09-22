@@ -97,7 +97,7 @@ MosAIC_cols <- c("female_mosquito" = "#4e79a7",
                  "UW Madison" = "#F781BF")
 
 # Chavda's Metadata
-chavda_metadata <- read_tsv("MosAIC_V1/06b_EnterobacterPopulationStructure/August_Chavda_Mos_Curated_Metadata.tsv") %>%
+chavda_metadata <- read_tsv("MosAIC_V1/06b_EnterobacterPopulationStructure/Chavda_Mos_Curated_Metadata_2.txt") %>%
   clean_names() #%>%
 
 #mutate(isolation_date_y = make_date(isolation_date_y))
@@ -229,7 +229,7 @@ ggsave(plot = EP6, filename = "EnterobacterModel/PlotsFinal/Figure_3_Chavda_Mos_
 # Subset Asburiaes 
 
 # Read in Enterobacter asrbuiae metadata - clean + filter for isolation source 
-E_metadata <- read_tsv("MosAIC_V1/06b_EnterobacterPopulationStructure/August_Chavda_Mos_Curated_Metadata.tsv") %>%
+E_metadata <- read_tsv("MosAIC_V1/06b_EnterobacterPopulationStructure/Chavda_Mos_Curated_Metadata_2.txt") %>%
   clean_names() 
 
 # Substitute all "." with "_"  
@@ -244,14 +244,14 @@ E_metadata_edit <- E_metadata %>%
 
 E_metadata_edit2 <- as.data.frame(E_metadata %>% 
                                     select(!gan_bank_accession_s) %>% 
-                                    select(assembly, host_simple, sample_source, 
-                                           source_lab, sample_location, lab_field_derived, 
-                                           mosquito_species) %>%
+                                    select(assembly, host_simple, 
+                                           mos_aic_source_lab, location, mos_aic_lab_field, 
+                                           mosquito_spp) %>%
                                     rename(ID = "assembly") %>%
                                     mutate(host = 1) %>%
-                                    mutate(lab_field_derived_simple = if_else(lab_field_derived == "lab", "L", lab_field_derived)) %>%
+                                    mutate(lab_field_derived_simple = if_else(mos_aic_lab_field == "lab", "L", mos_aic_lab_field)) %>%
                                     mutate(lab_field_derived_simple = if_else(lab_field_derived_simple == "field", "F", lab_field_derived_simple)) %>%
-                                    mutate(source_lab_simple = if_else(source_lab == "Coon_Kerri", "1", source_lab)) %>%
+                                    mutate(source_lab_simple = if_else(mos_aic_source_lab == "Coon_Kerri", "1", mos_aic_source_lab)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "Povelones_Michael", "2", source_lab_simple)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "ValienteMoro_Claire", "3", source_lab_simple)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "UW_Capstone_Students", "4", source_lab_simple)))
@@ -276,9 +276,9 @@ EA_subset_1 <- EA_Subset_Tree %>% gheatmap(Host, colnames_offset_y = 20,
 EA_subset_1 <- EA_subset_1 + new_scale_fill()
 
 EA_subset_2 <- EA_subset_1 + geom_fruit(
-  data = subset(E_metadata_edit2, !is.na(mosquito_species)),
+  data = subset(E_metadata_edit2, !is.na(mosquito_spp)),
   geom = geom_point, 
-  mapping = aes(x = host, y = ID, col=mosquito_species),
+  mapping = aes(x = host, y = ID, col=mosquito_spp),
   offset = 0,
   grid.params=list(
     linetype=3,
@@ -366,7 +366,7 @@ ER_subset_1 <- ER_Subset_Tree %>% gheatmap(Host, colnames_offset_y = 20,
 ER_subset_2 <- ER_subset_1 + geom_fruit(
   data = E_metadata_edit2, 
   geom = geom_point, 
-  mapping = aes(x = host, y = ID, col=mosquito_species),
+  mapping = aes(x = host, y = ID, col=mosquito_spp),
   offset = 0,
   grid.params=list(
     linetype=3,

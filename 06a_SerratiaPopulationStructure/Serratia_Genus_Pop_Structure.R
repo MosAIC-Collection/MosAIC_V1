@@ -61,6 +61,7 @@ cols <- c("Serratia entomophila" = "#4e79a7",
           "Insect"="#67717F",
           "Missing"="white",
           "Mosquito"="black",
+          'Larval water' = "#0F5DA7", 
           "Plant"="#BAD24E",
           "Williams"="#7D9CA9",
           "Curated"="#667B8C",
@@ -255,7 +256,7 @@ S_metadata_edit2 <- as.data.frame(S_metadata %>%
 
 SM_subset <- tree_subset(rooted_serratia_tree, "HN118_contigs.fa", levels_back = 10)
 SM_subset_1 <- SM_subset %>%
-  ggtree(size = 0.2, layout = "fan", open.angle = 185) 
+  ggtree(size = 0.2, layout = "fan", open.angle = 185) #+ geom_tiplab(size = 1)
 
 SM_subset_2 <- SM_subset_1 %>% gheatmap(Host, colnames_offset_y = 20,
                                         colnames_angle = 60,

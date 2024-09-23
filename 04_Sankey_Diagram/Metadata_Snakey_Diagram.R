@@ -4,7 +4,7 @@ library(ggsankey)
 library(janitor)
 
 ### Make Sankey Plots
-MosAIC_tbl <- read_tsv("MosAIC_V1/04_Sankey_Diagram/S1_Table_MosAIC_Metadata_Final2.txt") %>%
+MosAIC_tbl <- read_tsv("MosAIC_V1/04_Sankey_Diagram/Table S1 MosAIC_Metadata_Revised3_LB.txt") %>%
   clean_names()
 
 sources <- c("unknown", "water", "cow manure", "non-mosquito Diptera", "mosquito", "larval water")
@@ -63,8 +63,8 @@ MosAIC_tbl_clean <- MosAIC_tbl %>%
   mutate(mosquito_species = if_else(mosquito_species == "Culex_erraticus", "Culex erraticus", mosquito_species)) %>%
   mutate(mosquito_species = if_else(mosquito_species == "Culex_pipiens", "Culex pipiens", mosquito_species)) %>%
   mutate(mosquito_species = if_else(mosquito_species == "Toxorhynchites_amboinensis", "Toxorhynchites amboinensis", mosquito_species)) %>%
-  mutate(lab_field_derived = if_else(sample_source == "3_MLW", "3_lab", lab_field_derived)) %>%
-  mutate(lab_field_derived = if_else(sample_source == "3_MLW", "3_field", lab_field_derived)) %>%
+  #mutate(lab_field_derived = if_else(sample_source == "3_MLW", "3_lab", lab_field_derived)) %>%
+  #mutate(lab_field_derived = if_else(sample_source == "3_MLW", "3_field", lab_field_derived)) %>%
   mutate(lab_field_derived = if_else(sample_source == "2_NMDE", "2_field", lab_field_derived)) %>%
   mutate(lab_field_derived = if_else(sample_source == "2_NMDE", "2_field", lab_field_derived)) %>%
   mutate(lab_field_derived = if_else(sample_source == "1_NMDH", "1_field", lab_field_derived)) %>%

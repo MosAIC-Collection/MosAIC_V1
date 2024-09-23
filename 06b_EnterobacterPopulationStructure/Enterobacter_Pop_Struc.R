@@ -252,6 +252,7 @@ E_metadata_edit2 <- as.data.frame(E_metadata %>%
                                     mutate(lab_field_derived_simple = if_else(mos_aic_lab_field == "lab", "L", mos_aic_lab_field)) %>%
                                     mutate(lab_field_derived_simple = if_else(lab_field_derived_simple == "field", "F", lab_field_derived_simple)) %>%
                                     mutate(source_lab_simple = if_else(mos_aic_source_lab == "Coon_Kerri", "1", mos_aic_source_lab)) %>%
+                                    mutate(source_lab_simple = if_else(location == "Univ_Georgia", "3", source_lab_simple)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "Povelones_Michael", "2", source_lab_simple)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "ValienteMoro_Claire", "4", source_lab_simple)) %>%
                                     mutate(source_lab_simple = if_else(source_lab_simple == "UW_Capstone_Students", "1", source_lab_simple)))

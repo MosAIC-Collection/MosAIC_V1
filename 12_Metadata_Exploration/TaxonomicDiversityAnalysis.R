@@ -1,8 +1,7 @@
 #### Script to Explore Diversity of the Collection 
 library(tidyverse)
 
-MosAIC_clean <- read_tsv("MosAIC_V1/12_Metadata_Exploration/S1_Table_MosAIC_Metadata_Final2.txt") %>%
-  filter(qc_pass == "Pass")
+MosAIC_clean <- read_tsv("MosAIC_V1/12_Metadata_Exploration/Table_S1_MosAIC_Metadata_Revised2_Final.txt") 
 
 colnames(MosAIC_clean)
 
@@ -56,7 +55,7 @@ create_bar_plot <- function(data, facet_var) {
     xlab("Family")
 }
 
-create_bar_plot(MosAIC_clean, mosquito_female_feeding_status)
+
 
 #### How many isolates in male / female 
 MosAIC_clean %>%
@@ -72,10 +71,9 @@ MosAIC_clean %>%
   facet_wrap(~mosquito_female_feeding_status, scales = "fixed") + 
   coord_flip() + 
   ylab("Number of Isolates") + 
-  xlab("Family") + 
-  theme(axis.text.y = element_text(face = "italic"))
+  xlab("Family") 
 
-ggsave("070923_BloodVsSugar_Family_Distributions.pdf", width = 10, height = 10)
+ggsave("270924_BloodVsSugar_Family_Distributions.pdf", width = 10, height = 10)
 
 MosAIC_clean %>%
   select(internal_id, gtdb_family, mosquito_sex) %>%
@@ -90,10 +88,9 @@ MosAIC_clean %>%
   facet_wrap(~mosquito_sex, scales = "fixed") + 
   coord_flip() + 
   ylab("Number of Isolates") + 
-  xlab("Family") + 
-  theme(axis.text.y = element_text(face = "italic"))
+  xlab("Family") 
 
-ggsave("070923_Sex_Family_Distributions.pdf", width = 10, height = 10)
+ggsave("270924_Sex_Family_Distributions.pdf", width = 10, height = 10)
 
 MosAIC_clean %>%
   select(internal_id, gtdb_family, mosquito_tissue) %>%
@@ -108,10 +105,9 @@ MosAIC_clean %>%
   facet_wrap(~mosquito_tissue, scales = "fixed", nrow = 1) + 
   coord_flip() + 
   ylab("Number of Isolates") + 
-  xlab("Family") + 
-  theme(axis.text.y = element_text(face = "italic"))
+  xlab("Family") 
 
-ggsave("080923_Tissue_Family_Distributions.pdf", width = 10, height = 10)
+ggsave("270924_Tissue_Family_Distributions.pdf", width = 10, height = 10)
 
 MosAIC_clean %>%
   select(internal_id, gtdb_family, mosquito_life_stage) %>%
@@ -126,10 +122,9 @@ MosAIC_clean %>%
   facet_wrap(~mosquito_life_stage, scales = "fixed", nrow = 1) + 
   coord_flip() + 
   ylab("Number of Isolates") + 
-  xlab("Family") + 
-  theme(axis.text.y = element_text(face = "italic"))
+  xlab("Family") 
 
-ggsave("070923_LifeStage_Family_Distributions.pdf", width = 10, height = 10)
+ggsave("270924_LifeStage_Family_Distributions.pdf", width = 10, height = 10)
 
 MosAIC_clean %>%
   select(internal_id, gtdb_family, lab_field_derived) %>%
@@ -144,10 +139,9 @@ MosAIC_clean %>%
   facet_wrap(~lab_field_derived, scales = "fixed", nrow = 1) + 
   coord_flip() + 
   ylab("Number of Isolates") + 
-  xlab("Family") + 
-  theme(axis.text.y = element_text(face = "italic"))
+  xlab("Family") 
 
-ggsave("070923_lab_field_Family_Distributions.pdf", width = 10, height = 10)
+ggsave("270924_lab_field_Family_Distributions.pdf", width = 10, height = 10)
 
 MosAIC_clean %>%
   select(internal_id, gtdb_family, sample_source) %>%
@@ -162,11 +156,10 @@ MosAIC_clean %>%
   facet_wrap(~sample_source, scales = "fixed", nrow = 1) + 
   coord_flip() + 
   ylab("Number of Isolates") + 
-  xlab("Family") + 
-  theme(axis.text.y = element_text(face = "italic"))
+  xlab("Family") 
 
 
-ggsave("070923_Source_Family_Distributions.pdf", width = 10, height = 10)
+ggsave("270924_Source_Family_Distributions.pdf", width = 10, height = 10)
 
 ### Percentages
 MosAIC_clean %>%
@@ -232,7 +225,7 @@ MosAIC_clean %>%
   xlab("Genus") + 
   theme(axis.text.y = element_text(face = "italic"))
 
-ggsave("070923_LabField_Enterobactericeae.pdf", width = 10, height = 10)
+ggsave("270924_LabField_Enterobactericeae.pdf", width = 10, height = 10)
 
 
 MosAIC_clean %>%
@@ -252,7 +245,7 @@ MosAIC_clean %>%
   xlab("Genus") + 
   theme(axis.text.y = element_text(face = "italic"))
 
-ggsave("070923_Sex_Enterobactericeae.pdf", width = 10, height = 10)
+ggsave("270924_Sex_Enterobactericeae.pdf", width = 10, height = 10)
 
 
 MosAIC_clean %>%

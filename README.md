@@ -48,8 +48,8 @@ Once the repository has been cloned (above), recreate each figure as follows:
 * Fig S4 - Script: `12_Metadata_Exploration.R`: run code from line `1` to `148`
 * Fig S5 - Script: `12_Metadata_Exploration.R`: run code from line `1` to `255`
 * Fig S6 - Script: `05_Virulence_Factor_Analysis.R`: run code from line `1` to `340`
-* Fig S7 - Script: `06a_SerratiaPopulationStructure.R`: run code from line `1` to `103`
-* Fig S8 - Script: `06b_EnterobacterPopulationStructure.R`: run code from line `1` to `154`
+* Fig S7 - Script: `06b_EnterobacterPopulationStructure.R`: run code from line `1` to `154`
+* Fig S8 - Script: `06a_SerratiaPopulationStructure.R`: run code from line `1` to `103`
 * Fig S9 - Script: `06c_ElizabethkingiaPopulationStructure.R`: run code from line `1` to `105`
 * Fig S10 - Script: `08_GeneAccumulationCurves.R`: run code from line `1` to `42`
 * Fig S11-13 - Script: `10_VisPopPUNKClusters.R`: run code from line `1` to `67`
